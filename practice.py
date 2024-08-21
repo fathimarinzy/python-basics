@@ -684,6 +684,26 @@
 #   n=n//10
 # print(sum)
 
+import os
+from datetime import datetime
+# print(os.getcwd())
+# # os.chdir()
+# print(os.listdir())
+# for dirpath,dirnames,filenames in  os.walk('Users\Lenovo\OneDrive\Desktop\python basics'):
+#     print("current path:",dirpath)
+#     print("directories:",dirnames)
+#     print("files:",filenames)
+#     print()
+# print(os.environ.get('HOME'))
+# 'test.txt'
+# filepath=os.path.join(os.environ.get('HOME'),'test.txt')
+# print(filepath)
 
-row=int(input("enter th rows:"))
-
+print(os.path.basename('/tmp/test.txt'))
+print(os.path.dirname('/tmp/test.txt'))
+print(os.path.split('/tmp/test.txt'))
+print(os.path.exists('/tmp/test.txt'))
+print(os.path.isdir('/tmp/test.txt'))
+print(os.path.isfile('/tmp/test.txt'))
+print(os.path.splitext('/tmp/test.txt'))
+print(dir(os.path))
