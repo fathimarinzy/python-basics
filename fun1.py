@@ -100,5 +100,109 @@
 
 
 # register and login
+dic={}
+def reg():
+    username=int(input("enter the username:"))
+    password=int(input("enter the password:"))
+    dict[username]=password
+    print("register successfull ")
+
+def log():
+    username=int(input("enter the username:"))
+    password=int(input("enter the password:"))
+    if username in dict and   dict[username]==password:
+        print("login successfull ")
+    else:
+        print("invalid ")
+
+while True:
+      choice = int(input("\n1.register\n2.login\n3.exit\nEnter your choice : "))
+
+      if choice == 1:
+        reg()
+      elif choice==2:
+        log()
+      elif choice==3:
+        print("exit")
+        break
 
 
+def fun(name,age=30):
+    print("sucess",name,age)
+fun("ammu")
+fun("anu",20)
+
+
+#global variable , in local variable print stmt does not print outside the code
+b=200
+def fun():
+    global a
+    a=100
+    print(a)
+    print(b)
+    print("success")
+fun()
+print(a)
+
+
+# #arbitrary arguments
+def display(*a):
+    print(a)
+display(10,20,30)
+
+
+def display(a,b,c):
+    print(a,b,c)
+display(a=10,b=20,c=30)
+
+#keyword arguments
+def display(**a):
+    print(a)
+display(a=10,b=20,c=30)
+
+# recursion
+def display(n):
+    if n==0:
+        return n
+    else:
+        return n+display(n-1)
+print(display(5))
+
+
+# factorial of a num using recursion
+def fact(n):
+    if n==1:
+        return n
+    else:
+        return n*fact(n-1)
+    
+print(fact(5))
+
+# sum of digits using  recursion
+def sum(n):
+   
+    if n==0:
+        return n
+    else:
+        return n%10+sum(n//10)
+
+print(sum(1234))
+
+
+# reverse a string using recursive fn
+def rev(n):
+    if len(n)==0:
+        return n
+    else:
+     return n[-1]+ rev(n[:-1])
+
+print(rev("hello"))
+
+
+# #calculate x raised to power of n
+def pow(a,b):
+    if b==1:
+      return a
+    else:
+       return a*pow(a,b-1)
+print(pow(2,3))
