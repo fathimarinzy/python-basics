@@ -684,6 +684,8 @@
 #   n=n//10
 # print(sum)
 
+
+#import os
 import os
 from datetime import datetime
 # print(os.getcwd())
@@ -699,11 +701,91 @@ from datetime import datetime
 # filepath=os.path.join(os.environ.get('HOME'),'test.txt')
 # print(filepath)
 
-print(os.path.basename('/tmp/test.txt'))
-print(os.path.dirname('/tmp/test.txt'))
-print(os.path.split('/tmp/test.txt'))
-print(os.path.exists('/tmp/test.txt'))
-print(os.path.isdir('/tmp/test.txt'))
-print(os.path.isfile('/tmp/test.txt'))
-print(os.path.splitext('/tmp/test.txt'))
-print(dir(os.path))
+# print(os.path.basename('/tmp/test.txt'))
+# print(os.path.dirname('/tmp/test.txt'))
+# print(os.path.split('/tmp/test.txt'))
+# print(os.path.exists('/tmp/test.txt'))
+# print(os.path.isdir('/tmp/test.txt'))
+# print(os.path.isfile('/tmp/test.txt'))
+# print(os.path.splitext('/tmp/test.txt'))
+# print(dir(os.path))
+
+# import module we have written 
+import modules1
+
+
+# standard libraries
+import random
+course=['history','math','physics','compsci']
+random=random.choice(course)
+print(random)
+
+import math
+rad=math.radians(90)
+print(rad)
+print(math.sin(rad))
+
+
+import calendar
+print(calendar.isleap(2020))
+
+
+import os
+print(os.__file__)
+
+# comic
+import antigravity
+
+
+# functions
+def hello():
+    pass
+hello()
+
+def hello():
+    print("hello")
+hello()
+
+
+def hello():
+    print("hello")
+hello()
+hello()
+hello()
+hello()
+
+def hello():
+    return "hello"
+print(hello())
+
+def hello():
+    return "hello"
+print(len(hello()))
+def hello():
+    return "hello"
+print(hello().upper())
+
+def hello(greet,hi):
+    return '{},{} Function.'.format(greet,hi)
+print(hello('greet','you'))
+
+#positional keyword arguments
+def stuinfo(*args,**kwargs):
+    print(args)
+    print(kwargs)
+stuinfo('math','art',name='john',age=22)
+
+def stuinfo(*args,**kwargs):
+    print(args)
+    print(kwargs)
+list=['math', 'art']
+dict={'name': 'john', 'age': 22}
+stuinfo(list,dict)#it will give the list and dict together
+
+#to get output seperately
+def stuinfo(*args,**kwargs):
+    print(args)
+    print(kwargs)
+list=['math', 'art']
+dict={'name': 'john', 'age': 22}
+stuinfo(*list,**dict)
