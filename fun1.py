@@ -208,115 +208,127 @@
 # print(pow(2,3))
 
 
-# #fibnocci
+#fibnocci using recursion
+def fibno(n):
+    if n<=0:
+        return "fibnocci series"
+    elif n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibno(n-1)+fibno(n-2)
+for i in range(0,11):
+  print(fibno(i))
+
 
 
 #lambda 
  
-# lambda arguments:expression
-x=lambda a,b:a+b
-print(x(10,20))
+# # lambda arguments:expression
+# x=lambda a,b:a+b
+# print(x(10,20))
 
-x=lambda a,b,c:a+b+c
-print(x(10,20,30))
+# x=lambda a,b,c:a+b+c
+# print(x(10,20,30))
 
-# #filter
-p=[1,2,3,4,5,6,7,8,9,10]
-x=list(filter(lambda a:a%2==0,p))
-print(x)
-# #map
+# # #filter
+# p=[1,2,3,4,5,6,7,8,9,10]
+# x=list(filter(lambda a:a%2==0,p))
+# print(x)
+# # #map
 
-p=[1,2,3,4,5,6,7,8,9,10]
-x=list(map(lambda a:a**2,p))
-print(x)
-#reduce
-from functools import reduce
+# p=[1,2,3,4,5,6,7,8,9,10]
+# x=list(map(lambda a:a**2,p))
+# print(x)
+# #reduce
+# from functools import reduce
 
-p=[1,2,3,4,5,6,7,8,9,10]
-x=reduce(lambda a,b:a+b,p)
-print(x)
-
-
-#find the positive numbers
-p=[1,-1,2,-2,3,-3]
-x=list(filter(lambda a:a>0,p))
-print(x)
-
-# #find the strings which are palindrome
-k=['mom','level','bat','cat']
-x=list(filter(lambda a:a[::-1]==a,k))
-print(x)
-
-# #convert each string to capital letters
-t=['hello','python','hai','java']
-x=list(map(lambda a:a.upper(),t))
-print(x)
-
-# #calculate length of each string
-y=['apple','banana','pineapple','mango']
-x=list(map(lambda a:len(a),y))
-print(x)
-
-# #find the maximum value
-from functools import reduce
-e=[3,5,6,8,1]
-# x=reduce(lambda a,b:a if a>b else b,e)
-# x=reduce(lambda a,b:max(a,b),e)
+# p=[1,2,3,4,5,6,7,8,9,10]
+# x=reduce(lambda a,b:a+b,p)
 # print(x)
 
-# #concatenate them into a single string
-from functools import reduce
-h=['hello','python','programming','language']
-x=reduce(lambda a,b:a+b,h)
-print(x)
 
-# #write a lambda fun to add 10 to a given number
-x=lambda a:a+10
-print(x(10))
+# #find the positive numbers
+# p=[1,-1,2,-2,3,-3]
+# x=list(filter(lambda a:a>0,p))
+# print(x)
 
-#using def with filter
-def display (n):
-    return n>0
-p=[1,-1,2,-2,3,-3]
-x=list(filter(display,p))
-print(x)
+# # #find the strings which are palindrome
+# k=['mom','level','bat','cat']
+# x=list(filter(lambda a:a[::-1]==a,k))
+# print(x)
 
-#using def with map
+# # #convert each string to capital letters
+# t=['hello','python','hai','java']
+# x=list(map(lambda a:a.upper(),t))
+# print(x)
 
-def display(n):
-    return n.upper()
-t=['hello','python','hai','java']
-x=list(map(display,t))
-print(x)
+# # #calculate length of each string
+# y=['apple','banana','pineapple','mango']
+# x=list(map(lambda a:len(a),y))
+# print(x)
+
+# # #find the maximum value
+# from functools import reduce
+# e=[3,5,6,8,1]
+# # x=reduce(lambda a,b:a if a>b else b,e)
+# # x=reduce(lambda a,b:max(a,b),e)
+# # print(x)
+
+# # #concatenate them into a single string
+# from functools import reduce
+# h=['hello','python','programming','language']
+# x=reduce(lambda a,b:a+b,h)
+# print(x)
+
+# # #write a lambda fun to add 10 to a given number
+# x=lambda a:a+10
+# print(x(10))
+
+# #using def with filter
+# def display (n):
+#     return n>0
+# p=[1,-1,2,-2,3,-3]
+# x=list(filter(display,p))
+# print(x)
+
+# #using def with map
+
+# def display(n):
+#     return n.upper()
+# t=['hello','python','hai','java']
+# x=list(map(display,t))
+# print(x)
 
 
-#usinf def with reduce
-def display(a,b):
-    # print(a,b)
-    return a+b
-from functools import reduce
-h=['hello','python','programming','language']
-x=reduce(display,h)
-print(x)
+# #usinf def with reduce
+# def display(a,b):
+#     # print(a,b)
+#     return a+b
+# from functools import reduce
+# h=['hello','python','programming','language']
+# x=reduce(display,h)
+# print(x)
 
 
-#call a function from lambda
+# #call a function from lambda
 
-def  display(a):
-    return a
-x=lambda a:display(a)
-print(x(10))
+# def  display(a):
+#     return a
+# x=lambda a:display(a)
+# print(x(10))
 
-def show(n):
-    return n%2==0
-p=[1,2,3,4,5,6,7,8,9,10]
-x=list(filter(lambda a:show(a),p))
-print(x)
+# def show(n):
+#     return n%2==0
+# p=[1,2,3,4,5,6,7,8,9,10]
+# x=list(filter(lambda a:show(a),p))
+# print(x)
 
 
-#call a inner fun within a fun
-def out_fun():
-    def in_fun():
-        return "inner fun"
-    return in_fun()
-print(out_fun)
+# #call a inner fun within a fun
+# def out_fun():
+#     def in_fun():
+#         return "inner fun"
+#     return in_fun()
+# print(out_fun)
