@@ -309,15 +309,14 @@ l=[11,84,56,19,73,56]
 
 
 #transpose of a matrix
-a=[[1,2,3]
-   [4,5,6],
-   [7,8,9]]
-b=[[0,0,0],[0,0,0],[0,0,0]]
-for i in range(len(a)):
-    for j in range(len(a)):
-        b[j][i]=a[i][j]
-for i in b:
-    print(i)
-
+# a=[[1,2,3]
+#    [4,5,6],
+#    [7,8,9]]
+# b=[[0,0,0],[0,0,0],[0,0,0]]
+# for i in range(len(a)):
+#     for j in range(len(a)):
+#         b[j][i]=a[i][j]
+# for i in b:
+#     print(i)
 
 
