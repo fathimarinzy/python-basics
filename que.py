@@ -33,38 +33,38 @@
 
 
 #from a list of nubers remove zero to the end of the list
-list=[1,0,2,0,4,6]
+# list=[1,0,2,0,4,6]
 
-for i in list:
-    if i==0:
-      list.remove(0)
-      list.append(0)
-print(list)
-
-
-#write a python function that takes a list and returns a new list with distinct elements
-#from the list
-
-def fun(n):
-    m=[]
-    # print(" list=",n)
-    for i in n :
-      if i not in m:
-        m.append(i)
-    print("new list=",m)
-list=[1,2,3,3,3,3,4,5]
-fun(list)
+# for i in list:
+#     if i==0:
+#       list.remove(0)
+#       list.append(0)
+# print(list)
 
 
- #find the missing number
-def display(l):
-   n=len(l)+1
-   total=n*(n+1)//2
-   total_l=sum(l)
-   missing=total-total_l 
-   return missing
-list=[1,2,4,5,6]
-print(display(list))
+# #write a python function that takes a list and returns a new list with distinct elements
+# #from the list
+
+# def fun(n):
+#     m=[]
+#     # print(" list=",n)
+#     for i in n :
+#       if i not in m:
+#         m.append(i)
+#     print("new list=",m)
+# list=[1,2,3,3,3,3,4,5]
+# fun(list)
+
+
+#  #find the missing number
+# def display(l):
+#    n=len(l)+1
+#    total=n*(n+1)//2
+#    total_l=sum(l)
+#    missing=total-total_l 
+#    return missing
+# list=[1,2,4,5,6]
+# print(display(list))
 
 
 # what is the python prgrm to find pairs of numbers from a given list such
@@ -72,12 +72,34 @@ print(display(list))
 # input: a=[1,2,3,4,5,6,7,8,9,10]
 # output:3,4,5,6,8,10
 import math
-a=[1,2,3,4,5,6,7,8,9,10]
-b=[]
-for i in range(a):
-    for j in range(a):
-        c=a[i^2]+a[j^2]
-        
 
-      
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+b = []
 
+for i in range(len(a)):
+    for j in range(i+1, len(a)):
+        c = a[i]**2 + a[j]**2
+        d = int(c**0.5)
+        if d**2 == c:
+            b.extend([a[i], a[j]])
+b = sorted(set(b))
+print(b)
+
+
+#if a upper diagonal element is lower than lower diagonal
+#  element,thrn replace lower diagonal element with 1 else replace upper diagonal elemnt with 0
+
+matrix = [
+    [5, 8, 3],
+    [4, 7, 6],
+    [1, 2, 9]
+]
+n = len(matrix)
+for i in range(n):
+    for j in range(i+1, n):
+        if matrix[i][j] < matrix[j][i]:
+            matrix[j][i] = 1
+        else:
+            matrix[i][j] = 0
+for row in matrix:
+    print(row)
