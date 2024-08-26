@@ -789,3 +789,28 @@
 # list=['math', 'art']
 # dict={'name': 'john', 'age': 22}
 # stuinfo(*list,**dict)
+
+
+#dict comp
+f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+c={key: round((value-32)*(5/9)) for(key,value)in f.items()}
+print(c)
+
+weather={'new york':'snowing','boston':'sunny','los angeles':'sunny','chicago':'cloud'}
+sunny={key:value for(key,value) in weather.items() if value=="sunny" }
+print(sunny)
+
+f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+desc={key:("warm" if value>=40 else "cold")for (key,value)in f.items()}
+print(desc)
+
+def temp(value):
+    if value >=70:
+        return "HOT"
+    elif 69>= value>=40:
+        return "warm"
+    else:
+        return "cold"
+f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+desc={key:temp(value)for (key,value)in f.items()}
+print(desc)
