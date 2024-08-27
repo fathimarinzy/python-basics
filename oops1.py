@@ -267,7 +267,7 @@ f=Son()
 f.phone()
 f.walk()
 f.study()
-
+#super method
 class Father:
     def __init__(self,a):
         print("father page",a)
