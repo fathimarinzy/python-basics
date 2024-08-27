@@ -103,3 +103,8 @@ for i in range(n):
             matrix[i][j] = 0
 for row in matrix:
     print(row)
+
+
+
+#  find the employee with highest salary
+#  promote an employee (eg:E002) by increasing salary and updating position
