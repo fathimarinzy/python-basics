@@ -141,18 +141,18 @@
 # x=a%10
 # print(x)
 
-# n=(input("enter the no:"))
-# m=n
-# reverse=0
-# while m!=0:
-#     x=n%10
-#     reverse=reverse*10+x
-#     n//=10
-# if  m==n :
-#     print("palindrome")
+n=int((input("enter the no:")))
+m=n
+reverse=0
+while m>0:
+    x=n%10
+    reverse=reverse*10+x
+    n//=10
+if  reverse==m :
+    print("palindrome")
 
-# else:
-#     print("not a plaindrome")
+else:
+    print("not a plaindrome")
 
 
 # n=int(input("enter the no:"))
