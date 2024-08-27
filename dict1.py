@@ -113,7 +113,6 @@ for i in range(1,11):
     d[i]=i*i
 print(d)
 
-
 #dictionary comprehension
 # d={key:value for i in  iterable if condition}
 
@@ -138,15 +137,11 @@ a={"ammu":10,"anu":20,"tintu":15,"pinky":25}
 
 a={v:i for v,i in a.items() if i%2==0}
 print(a)
-
 #print dictionary which contain value(age) are even and greater than 20
-
 a={"ammu":15,"anu":18,"tintu":35,"pinky":30}
 a={v:i for v,i in a.items() if i%2==0 and i>20}
 print(a)
-
 # print dictionary which contain value(age)   greater than 20 as "old" and less than 20 as "young"
-
 a={"ammu":15,"anu":18,"tintu":35,"pinky":30}
 a={i:"old" if j>20 else "young" for i,j in a.items()}
 print(a)
