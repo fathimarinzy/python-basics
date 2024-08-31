@@ -792,25 +792,48 @@
 
 
 #dict comp
-f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
-c={key: round((value-32)*(5/9)) for(key,value)in f.items()}
-print(c)
+# f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+# c={key: round((value-32)*(5/9)) for(key,value)in f.items()}
+# print(c)
 
-weather={'new york':'snowing','boston':'sunny','los angeles':'sunny','chicago':'cloud'}
-sunny={key:value for(key,value) in weather.items() if value=="sunny" }
-print(sunny)
+# weather={'new york':'snowing','boston':'sunny','los angeles':'sunny','chicago':'cloud'}
+# sunny={key:value for(key,value) in weather.items() if value=="sunny" }
+# print(sunny)
 
-f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
-desc={key:("warm" if value>=40 else "cold")for (key,value)in f.items()}
-print(desc)
+# f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+# desc={key:("warm" if value>=40 else "cold")for (key,value)in f.items()}
+# print(desc)
 
-def temp(value):
-    if value >=70:
-        return "HOT"
-    elif 69>= value>=40:
-        return "warm"
-    else:
-        return "cold"
-f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
-desc={key:temp(value)for (key,value)in f.items()}
-print(desc)
+# def temp(value):
+#     if value >=70:
+#         return "HOT"
+#     elif 69>= value>=40:
+#         return "warm"
+#     else:
+#         return "cold"
+# f={'new york':32,'boston':75,'los angeles':100,'chicago':50}
+# desc={key:temp(value)for (key,value)in f.items()}
+# print(desc)
+
+#oops
+class Employee:
+    pass
+
+emp1=Employee()
+emp2=Employee()
+# print(emp1)
+# print(emp2)
+
+emp1.first='corey'
+emp2.last='User'
+print(emp1.first)
+print(emp2.last)
+
+class Employee:
+    def __init__(self,first,last,pay):
+        self.fname=first
+        self.lname=last
+        self.pay=pay
+
+emp=Employee('corey','user','500000')
+print(emp)
