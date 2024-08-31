@@ -816,24 +816,35 @@
 # print(desc)
 
 #oops
-class Employee:
-    pass
+# class Employee:
+#     pass
 
-emp1=Employee()
-emp2=Employee()
-# print(emp1)
-# print(emp2)
+# emp1=Employee()
+# emp2=Employee()
+# # print(emp1)
+# # print(emp2)
 
-emp1.first='corey'
-emp2.last='User'
-print(emp1.first)
-print(emp2.last)
+# emp1.first='corey'
+# emp2.last='User'
+# print(emp1.first)
+# print(emp2.last)
 
+# class Employee:
+#     def __init__(self,first,last,pay):
+#         self.fname=first
+#         self.lname=last
+#         self.pay=pay
+
+# emp=Employee('corey','user','500000')
+# print(emp)
 class Employee:
     def __init__(self,first,last,pay):
         self.fname=first
         self.lname=last
         self.pay=pay
+    def fullname(self):
+        return '{} {}'.format(self.fname,self.lname)
+    
 
-emp=Employee('corey','user','500000')
-print(emp)
+emp1=Employee('corey','user',500000)
+print(emp1.fullname())
