@@ -837,14 +837,30 @@
 
 # emp=Employee('corey','user','500000')
 # print(emp)
+# class Employee:
+#     def __init__(self,first,last,pay):
+#         self.fname=first
+#         self.lname=last
+#         self.pay=pay
+#     def fullname(self):
+#         return '{} {}'.format(self.fname,self.lname)
+    
+
+# emp1=Employee('corey','user',500000)
+# print(emp1.fullname())
+
 class Employee:
+    noofemplo =0
     def __init__(self,first,last,pay):
         self.fname=first
         self.lname=last
         self.pay=pay
+        Employee.noofemplo +=1
     def fullname(self):
         return '{} {}'.format(self.fname,self.lname)
-    
 
 emp1=Employee('corey','user',500000)
-print(emp1.fullname())
+emp2=Employee('laila','user',500000)
+# print(emp1.fullname())
+    
+print(Employee.noofemplo)
