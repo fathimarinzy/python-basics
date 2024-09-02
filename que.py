@@ -71,40 +71,88 @@
 # that the sum of their squares equala a perfect square ? a^2+b^2=c^2.
 # input: a=[1,2,3,4,5,6,7,8,9,10]
 # output:3,4,5,6,8,10
-import math
+# import math
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-b = []
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# b = []
 
-for i in range(len(a)):
-    for j in range(i+1, len(a)):
-        c = a[i]**2 + a[j]**2
-        d = int(c**0.5)
-        if d**2 == c:
-            b.extend([a[i], a[j]])
-b = sorted(set(b))
-print(b)
+# for i in range(len(a)):
+#     for j in range(i+1, len(a)):
+#         c = a[i]**2 + a[j]**2
+#         d = int(c**0.5)
+#         if d**2 == c:
+#             b.extend([a[i], a[j]])
+# b = sorted(set(b))
+# print(b)
 
 
 #if a upper diagonal element is lower than lower diagonal
 #  element,thrn replace lower diagonal element with 1 else replace upper diagonal elemnt with 0
 
-matrix = [
-    [5, 8, 3],
-    [4, 7, 6],
-    [1, 2, 9]
-]
-n = len(matrix)
-for i in range(n):
-    for j in range(i+1, n):
-        if matrix[i][j] < matrix[j][i]:
-            matrix[j][i] = 1
-        else:
-            matrix[i][j] = 0
-for row in matrix:
-    print(row)
+# matrix = [
+#     [5, 8, 3],
+#     [4, 7, 6],
+#     [1, 2, 9]
+# ]
+# n = len(matrix)
+# for i in range(n):
+#     for j in range(i+1, n):
+#         if matrix[i][j] < matrix[j][i]:
+#             matrix[j][i] = 1
+#         else:
+#             matrix[i][j] = 0
+# for row in matrix:
+    # print(row)
 
 
 
 #  find the employee with highest salary
 #  promote an employee (eg:E002) by increasing salary and updating position
+
+#given a sorted array of distinct integers and a target value,return the index if the target 
+#is found.if not ,return the index where it would be if it were inserted in order.
+
+# def found(nums,target):
+#     for i in range(len(nums)):
+#         if nums[i]==target:
+#                 print (i)
+#         break
+# found([1,3,5,6],5)
+
+# nums=[1,3,5,6]
+# for i in range(len(nums)):
+#     if nums[i]==5:
+#         nums.index(i)
+#     break
+# class Solution:
+#     def found(self,nums,target):
+
+#         for i in range(len(nums)):
+#             if nums[i] == target:
+#                 print(i)
+#                 break
+#             else:
+#                 nums.append(2)
+#                 nums.append(4)
+#                 nums.append(7)
+#                 nums.sort()
+#                 if nums[i]==target:
+#                     print(i)
+#                     break
+#             # break
+# s=Solution()
+# s.found([1,3,5,6],5)
+
+class Solution:
+    def found(self,nums,target):
+        if target in nums:
+            print(nums.index(target))  
+        else:
+           
+            nums.append(target)
+            nums.sort()
+            print(nums.index(target))  
+s = Solution()
+s.found([1,3,5,6], 5)  
+s.found([1,3,5,6], 2)  
+s.found([1,3,5,6], 7) 

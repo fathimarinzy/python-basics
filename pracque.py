@@ -24,13 +24,16 @@
 
 ##factor program
 ##find the of a number
-def factor(num):
-    fac=[]
+# def factor(num):
+#     fac=[]
   
-    for i in range(1,num+1):
-        if num%i==0:
-            fac.append(i)
-    if len(fac)==2:
-        print("prime no")
-    return fac
-print(factor(9))
+#     for i in range(1,num+1):
+#         if num%i==0:
+#             fac.append(i)
+#     if len(fac)==2:
+#         print("prime no")
+#     return fac
+# print(factor(9))
+
+##number programs
+##                            
