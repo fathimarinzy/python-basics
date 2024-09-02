@@ -393,166 +393,210 @@
 # obj.study()
 
 #polymorphism
-#method overloading does not support in python
-class Student:
-    def display(self,a,b):
-        print(a+b)
-    def display(self,a,b,c):
-        print(a+b+c)
-s=Student()
-s.display(10,20)
+# #method overloading does not support in python
+# class Student:
+#     def display(self,a,b):
+#         print(a+b)
+#     def display(self,a,b,c):
+#         print(a+b+c)
+# s=Student()
+# s.display(10,20)
 
-# constructor overloading does not in python
-class Student:
-    def __init__(self,a,b):
-        print(a+b)
-    def __init__(self,a,b,c):
-        print(a+b+c)
-s=Student(10,20)
-# operator overloading 
-# using magic methods
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __add__(self,other):
-        print(self.a+other.a)
-s=Student(10)
-ss=Student(20)
-s+ss
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __sub__(self,other):
-        print(self.a-other.a)
-s=Student(20)
-ss=Student(10)
-s-ss
+# # constructor overloading does not in python
+# class Student:
+#     def __init__(self,a,b):
+#         print(a+b)
+#     def __init__(self,a,b,c):
+#         print(a+b+c)
+# s=Student(10,20)
+# # operator overloading 
+# # using magic methods
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __add__(self,other):
+#         print(self.a+other.a)
+# s=Student(10)
+# ss=Student(20)
+# s+ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __sub__(self,other):
+#         print(self.a-other.a)
+# s=Student(20)
+# ss=Student(10)
+# s-ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __mul__(self,other):
-        print(self.a*other.a)
-s=Student(20)
-ss=Student(10)
-s*ss
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __pow__(self,other):
-        print(self.a**other.a)
-s=Student(20)
-ss=Student(10)
-s**ss
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __truediv__(self,other):
-        print(self.a/other.a)
-s=Student(20)
-ss=Student(10)
-s/ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __mul__(self,other):
+#         print(self.a*other.a)
+# s=Student(20)
+# ss=Student(10)
+# s*ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __pow__(self,other):
+#         print(self.a**other.a)
+# s=Student(20)
+# ss=Student(10)
+# s**ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __truediv__(self,other):
+#         print(self.a/other.a)
+# s=Student(20)
+# ss=Student(10)
+# s/ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __floordiv__(self,other):
-        print(self.a//other.a)
-s=Student(20)
-ss=Student(10)
-s//ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __floordiv__(self,other):
+#         print(self.a//other.a)
+# s=Student(20)
+# ss=Student(10)
+# s//ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __mod__(self,other):
-        print(self.a%other.a)
-s=Student(20)
-ss=Student(10)
-s%ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __mod__(self,other):
+#         print(self.a%other.a)
+# s=Student(20)
+# ss=Student(10)
+# s%ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __gt__(self,other):
-        print(self.a>other.a)
-s=Student(20)
-ss=Student(10)
-s>ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __gt__(self,other):
+#         print(self.a>other.a)
+# s=Student(20)
+# ss=Student(10)
+# s>ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __lt__(self,other):
-        print(self.a<other.a)
-s=Student(20)
-ss=Student(10)
-s<ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __lt__(self,other):
+#         print(self.a<other.a)
+# s=Student(20)
+# ss=Student(10)
+# s<ss
 
-class Student:
-    def __init__(self,a):
-        self.a=a
-    def __ge__(self,other):
-        print(self.a>=other.a)
-s=Student(20)
-ss=Student(10)
-s>=ss
+# class Student:
+#     def __init__(self,a):
+#         self.a=a
+#     def __ge__(self,other):
+#         print(self.a>=other.a)
+# s=Student(20)
+# ss=Student(10)
+# s>=ss
 
-# overriding
-#method overriding
-class Father:
-    def phone(self):
-        print("father can only call")
-class Son(Father):
-    def phone(self):
-        print("son can call,video call,masg,take img")
-        super().phone() 
-s=Son()
-s.phone()
+# # overriding
+# #method overriding
+# class Father:
+#     def phone(self):
+#         print("father can only call")
+# class Son(Father):
+#     def phone(self):
+#         print("son can call,video call,masg,take img")
+#         super().phone() 
+# s=Son()
+# s.phone()
 
-#constructor overriding
-class father:
-    def __init__(self):
-        print("father")
-class Son(Father):
-    def __init__(self):
-        print("son")
-        super().__init__()
-a=Son()
+# #constructor overriding
+# class father:
+#     def __init__(self):
+#         print("father")
+# class Son(Father):
+#     def __init__(self):
+#         print("son")
+#         super().__init__()
+# a=Son()
 
-#encapsulation
-#private
-class Father:
-    __name='abc'
-    def __init__(self):
-        print("working")
-        print(self.__name)
-        self.__phone()
-    def __phone(self):
+# #encapsulation
+# #private
+# class Father:
+#     __name='abc'
+#     def __init__(self):
+#         print("working")
+#         print(self.__name)
+#         self.__phone()
+#     def __phone(self):
        
-        print("father can only call")
-s=Father()
+#         print("father can only call")
+# s=Father()
 
-##protected
-class Father:
-    _name="abc"
-    def __init__(self):
-        print("working")
-    def _phone(self):
-        print("father can only call")
+# ##protected
+# class Father:
+#     _name="abc"
+#     def __init__(self):
+#         print("working")
+#     def _phone(self):
+#         print("father can only call")
         
-class Son(Father):
-    def __init__(self):
-        print("son")
-        print(self._name)
-        self._phone()
-s=Son()
+# class Son(Father):
+#     def __init__(self):
+#         print("son")
+#         print(self._name)
+#         self._phone()
+# s=Son()
 
-##some methods
+# ##some methods
+# class A:
+#     def show1(self):
+#         print("a")
+# class B(A):
+#     def show2(self):
+#         print("b")
+# class C:
+#     def show3(self):
+#         print("c")
+# class D(C):
+#     def show4(self):
+#         print("d")
+
+# b1=B()
+# d1=D()
+# print(issubclass(B,A))
+# print(issubclass(C,A))
+# print(isinstance(b1,B))
+# print(isinstance(b1,A))
+# print(isinstance(d1,B))
+# print(isinstance(d1,C))
+
+
+# ##attribute methods
+# #hasattr#setattre#getattr
+# class Student:
+#     name="ammu"
+#     age=10
+#     course="python"
+# s=Student()
+# print(s.name)
+# print(hasattr(s,"name"))
+# print(hasattr(s,"mark"))
+# print(getattr(s,"name"))
+# setattr(s,"name","anu")
+# print(s.name)
+# setattr(s,"mark",100)
+# print(s.mark)
+# delattr(Student,"age")
+# print(s.age)
+
+##docstring
 class A:
+    """this is a class of A"""
     def show1(self):
         print("a")
 class B(A):
+    """this is a class of B"""
     def show2(self):
         print("b")
 class C:
@@ -564,28 +608,83 @@ class D(C):
 
 b1=B()
 d1=D()
-print(issubclass(B,A))
-print(issubclass(C,A))
-print(isinstance(b1,B))
-print(isinstance(b1,A))
-print(isinstance(d1,B))
-print(isinstance(d1,C))
+print(A.__doc__)
+print(B.__doc__)
 
 
-##attribute methods
-#hasattr#setattre#getattr
+print("""hello  hai   
+      hello
+      helllo""")
+
+
+#decorators
+#instance method
 class Student:
-    name="ammu"
-    age=10
-    course="python"
+    class_variable=0
+    def __init__(self,name):
+        self.name=name
+    def modify(self,newname):
+        self.name=newname
+        self.__class__.class_variable+=1
+        #__class__ is a special attribute that allows an instance of a class to access its class
+s=Student("ammu")
+print(s.name)
+print(Student.class_variable)
+s.modify("anu")
+print(s.name)
+print(Student.class_variable,"pppppp")
+
+#class method
+class Student:
+    class_variable=0
+    def __init__(self,name):
+        self.name=name
+    @classmethod
+    def modify(cls):
+        cls.class_variable+=1
+          
+s=Student("ammu")
+print(s.name)
+print(Student.class_variable)
+# s.modify("anu")
+# print(s.name)
+Student.modify("anu")
+print(s.name)
+print(Student.class_variable,"pppppp")
+
+
+#static method
+class Student:
+    class_variable=0
+    def __init__(self,name):
+        self.name=name
+    @staticmethod
+    def modify(a,b):
+        print(a+b)
+s=Student("ammu")
+print(s.name)
+print(Student.class_variable)
+Student.modify(10,20)
+print(s.name)
+print(Student.class_variable,"pppppp")
+
+
+##destructor
+class Student:
+    def __init__(self):
+        print("constructor")
+    def __del__(self):
+        print("destructor","first")
+    def hello(self):
+        print("working")
 s=Student()
-print(s.name)
-print(hasattr(s,"name"))
-print(hasattr(s,"mark"))
-print(getattr(s,"name"))
-setattr(s,"name","anu")
-print(s.name)
-setattr(s,"mark",100)
-print(s.mark)
-delattr(Student,"age")
-print(s.age)
+del s
+#without del s
+class Student:
+    def __init__(self):
+        print("constructor")
+    def __del__(self):
+        print("destructor","first")
+    def hello(self):
+        print("working")
+s=Student()

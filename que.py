@@ -112,47 +112,55 @@
 #given a sorted array of distinct integers and a target value,return the index if the target 
 #is found.if not ,return the index where it would be if it were inserted in order.
 
-# def found(nums,target):
-#     for i in range(len(nums)):
-#         if nums[i]==target:
-#                 print (i)
-#         break
-# found([1,3,5,6],5)
 
-# nums=[1,3,5,6]
-# for i in range(len(nums)):
-#     if nums[i]==5:
-#         nums.index(i)
-#     break
 # class Solution:
 #     def found(self,nums,target):
-
-#         for i in range(len(nums)):
-#             if nums[i] == target:
-#                 print(i)
-#                 break
-#             else:
-#                 nums.append(2)
-#                 nums.append(4)
-#                 nums.append(7)
-#                 nums.sort()
-#                 if nums[i]==target:
-#                     print(i)
-#                     break
-#             # break
-# s=Solution()
-# s.found([1,3,5,6],5)
-
-class Solution:
-    def found(self,nums,target):
-        if target in nums:
-            print(nums.index(target))  
-        else:
+#         if target in nums:
+#             print(nums.index(target))  
+#         else:
            
-            nums.append(target)
-            nums.sort()
-            print(nums.index(target))  
-s = Solution()
-s.found([1,3,5,6], 5)  
-s.found([1,3,5,6], 2)  
-s.found([1,3,5,6], 7) 
+#             nums.append(target)
+#             nums.sort()
+#             print(nums.index(target))  
+# s = Solution()
+# s.found([1,3,5,6], 5)  
+# s.found([1,3,5,6], 2)  
+# s.found([1,3,5,6], 7) 
+
+
+#create a class student with class variables school.
+#a.create a paramatrized constructor with id,name,and age
+#b.create instance of the class with id=1,name=sara,age=10 and id=2,nam='jose',age=20
+#c.access value of attributes of an instances using built in function
+#d.change the name attributes from jose to kris of defined instances
+# e.check if class student has place attribute.if class student has no place place attribute
+#  then create it using the built in method
+
+
+class Student:
+    school='abc'
+    def __init__(self,id,name,age):
+        self.id=id
+        self.name=name
+        self.age=age
+        
+s=Student(1,'sara',10)
+s1=Student(2,'jose',20)
+print(getattr(s,'id'))
+print(getattr(s,"name"))
+print(getattr(s,"age"))
+print(getattr(s1,'id'))
+print(getattr(s1,"name"))
+print(getattr(s1,"age"))
+setattr(s1,'name','kris')
+print(s1.name)
+if hasattr(s1,'place'):
+    print(getattr(s1,'place'))
+else:
+    setattr(s,'place','kollam')
+    setattr(s1,'place','kochi')
+    print(s.place)
+    print(s1.place)
+
+
+
