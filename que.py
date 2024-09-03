@@ -137,30 +137,38 @@
 #  then create it using the built in method
 
 
-class Student:
-    school='abc'
-    def __init__(self,id,name,age):
-        self.id=id
-        self.name=name
-        self.age=age
+# class Student:
+#     school='abc'
+#     def __init__(self,id,name,age):
+#         self.id=id
+#         self.name=name
+#         self.age=age
         
-s=Student(1,'sara',10)
-s1=Student(2,'jose',20)
-print(getattr(s,'id'))
-print(getattr(s,"name"))
-print(getattr(s,"age"))
-print(getattr(s1,'id'))
-print(getattr(s1,"name"))
-print(getattr(s1,"age"))
-setattr(s1,'name','kris')
-print(s1.name)
-if hasattr(s1,'place'):
-    print(getattr(s1,'place'))
-else:
-    setattr(s,'place','kollam')
-    setattr(s1,'place','kochi')
-    print(s.place)
-    print(s1.place)
+# s=Student(1,'sara',10)
+# s1=Student(2,'jose',20)
+# print(getattr(s,'id'))
+# print(getattr(s,"name"))
+# print(getattr(s,"age"))
+# print(getattr(s1,'id'))
+# print(getattr(s1,"name"))
+# print(getattr(s1,"age"))
+# setattr(s1,'name','kris')
+# print(s1.name)
+# if hasattr(s1,'place'):
+#     print(getattr(s1,'place'))
+# else:
+#     setattr(s,'place','kollam')
+#     setattr(s1,'place','kochi')
+#     print(s.place)
+#     print(s1.place)
+
+
+# Given a string s consisting of words and spaces, return the length of the last word in the string.
+# A word is a maximal 
+# substring
+#  consisting of non-space characters only.
+
+
 
 
 

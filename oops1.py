@@ -392,7 +392,7 @@
 # obj=Son('s','f','g')
 # obj.study()
 
-#polymorphism
+# polymorphism
 # #method overloading does not support in python
 # class Student:
 #     def display(self,a,b):
@@ -590,101 +590,114 @@
 # delattr(Student,"age")
 # print(s.age)
 
-##docstring
-class A:
-    """this is a class of A"""
-    def show1(self):
-        print("a")
-class B(A):
-    """this is a class of B"""
-    def show2(self):
-        print("b")
-class C:
-    def show3(self):
-        print("c")
-class D(C):
-    def show4(self):
-        print("d")
+# #docstring
+# class A:
+#     """this is a class of A"""
+#     def show1(self):
+#         print("a")
+# class B(A):
+#     """this is a class of B"""
+#     def show2(self):
+#         print("b")
+# class C:
+#     def show3(self):
+#         print("c")
+# class D(C):
+#     def show4(self):
+#         print("d")
 
-b1=B()
-d1=D()
-print(A.__doc__)
-print(B.__doc__)
-
-
-print("""hello  hai   
-      hello
-      helllo""")
+# b1=B()
+# d1=D()
+# print(A.__doc__)
+# print(B.__doc__)
 
 
-#decorators
-#instance method
-class Student:
-    class_variable=0
-    def __init__(self,name):
-        self.name=name
-    def modify(self,newname):
-        self.name=newname
-        self.__class__.class_variable+=1
-        #__class__ is a special attribute that allows an instance of a class to access its class
-s=Student("ammu")
-print(s.name)
-print(Student.class_variable)
-s.modify("anu")
-print(s.name)
-print(Student.class_variable,"pppppp")
+# print("""hello  hai   
+#       hello
+#       helllo""")
 
-#class method
-class Student:
-    class_variable=0
-    def __init__(self,name):
-        self.name=name
-    @classmethod
-    def modify(cls):
-        cls.class_variable+=1
-          
-s=Student("ammu")
-print(s.name)
-print(Student.class_variable)
+
+# #decorators
+# #instance method
+# class Student:
+#     class_variable=0
+#     def __init__(self,name):
+#         self.name=name
+#     def modify(self,newname):
+#         self.name=newname
+#         self.__class__.class_variable+=1
+#         #__class__ is a special attribute that allows an instance of a class to access its class
+# s=Student("ammu")
+# print(s.name)
+# print(Student.class_variable)
 # s.modify("anu")
 # print(s.name)
-Student.modify("anu")
-print(s.name)
-print(Student.class_variable,"pppppp")
+# print(Student.class_variable,"pppppp")
+
+# #class method
+# class Student:
+#     class_variable=0
+#     def __init__(self,name):
+#         self.name=name
+#     @classmethod
+#     def modify(cls):
+#         cls.class_variable+=1
+          
+# s=Student("ammu")
+# print(s.name)
+# print(Student.class_variable)
+# # s.modify("anu")
+# # print(s.name)
+# Student.modify("anu")
+# print(s.name)
+# print(Student.class_variable,"pppppp")
 
 
-#static method
-class Student:
-    class_variable=0
-    def __init__(self,name):
-        self.name=name
-    @staticmethod
-    def modify(a,b):
-        print(a+b)
-s=Student("ammu")
-print(s.name)
-print(Student.class_variable)
-Student.modify(10,20)
-print(s.name)
-print(Student.class_variable,"pppppp")
+# #static method
+# class Student:
+#     class_variable=0
+#     def __init__(self,name):
+#         self.name=name
+#     @staticmethod
+#     def modify(a,b):
+#         print(a+b)
+# s=Student("ammu")
+# print(s.name)
+# print(Student.class_variable)
+# Student.modify(10,20)
+# print(s.name)
+# print(Student.class_variable,"pppppp")
 
 
-##destructor
-class Student:
-    def __init__(self):
-        print("constructor")
-    def __del__(self):
-        print("destructor","first")
-    def hello(self):
-        print("working")
-s=Student()
-del s
-#without del s
-class Student:
-    def __init__(self):
-        print("constructor")
-    def __del__(self):
-        print("destructor","first")
-    def hello(self):
-        print("working")
-s=Student()
+# ##destructor
+# class Student:
+#     def __init__(self):
+#         print("constructor")
+#     def __del__(self):
+#         print("destructor","first")
+#     def hello(self):
+#         print("working")
+# s=Student()
+# del s
+# #without del s
+# class Student:
+#     def __init__(self):
+#         print("constructor")
+#     def __del__(self):
+#         print("destructor","first")
+#     def hello(self):
+#         print("working")
+# s=Student()
+
+
+##abstraction
+from abc import ABC ,abstractmethod
+class Polygon(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+class Rectangle(Polygon):
+    def area(self):
+        print("area")
+r=Rectangle()
+r.area()
