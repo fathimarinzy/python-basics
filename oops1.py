@@ -635,22 +635,20 @@
 # print(Student.class_variable,"pppppp")
 
 # #class method
-# class Student:
-#     class_variable=0
-#     def __init__(self,name):
-#         self.name=name
-#     @classmethod
-#     def modify(cls):
-#         cls.class_variable+=1
-          
-# s=Student("ammu")
-# print(s.name)
-# print(Student.class_variable)
-# # s.modify("anu")
-# # print(s.name)
-# Student.modify("anu")
-# print(s.name)
-# print(Student.class_variable,"pppppp")
+class Student:
+    class_variable=0
+    def __init__(self,name):
+        self.name=name
+    @classmethod
+    def modify(cls):
+        cls.class_variable+=1          
+s=Student("ammu")
+print(s.name)
+print(Student.class_variable)
+
+Student.modify()
+
+print(Student.class_variable,"pppppp")
 
 
 # #static method
