@@ -1,26 +1,31 @@
 from tkinter import *
 x=Tk()
 x.title("tkinter")
-c=IntVar()
+c=StringVar()
 e1 = Entry(x, bd=5,justify='center',bg='white',fg='black',textvariable=c)
 e1.grid(row=1,column=1,columnspan=4)
 
-val=''
+
 def click(a):
     # print(a)
-    c.set(a)
+    n=c.get()
+    c.set(n+ str(a))
+
+def equal():
+    res=eval(c.get())
+    c.set(res)
    
-    
+def clear():
+    c.set("")
+
+def backspace():
+    back=c.get()
+    c.set(back[:-1])
 
 
 
-    
 
-
-
-
-
-b1 = Button(x, text='clear',width=3,height=2,bg='medium sea green' ,fg='white')
+b1 = Button(x, text='clear',width=3,height=2,bg='medium sea green' ,fg='white',command=clear)
 b1.grid(row=2,column=1)
 b2 = Button(x, text=7,width=3,height=2,bg='medium sea green' ,fg='white',command=lambda:click(7))
 b2.grid(row=3,column=1)
@@ -31,7 +36,7 @@ b4.grid(row=5,column=1)
 b5 = Button(x, text='+/-',width=3,height=2,bg='medium sea green' ,fg='white')
 b5.grid(row=6,column=1)
 
-b6 = Button(x, text='<',width=3,height=2,bg='medium sea green' ,fg='white')
+b6 = Button(x, text='<',width=3,height=2,bg='medium sea green' ,fg='white',command=backspace)
 b6.grid(row=2,column=2)
 b7= Button(x, text='8',width=3,height=2,bg='medium sea green' ,fg='white',command=lambda:click(8))
 b7.grid(row=3,column=2)
@@ -61,10 +66,8 @@ b18 = Button(x, text='-',width=3,height=2,bg='medium sea green' ,fg='white',comm
 b18.grid(row=4,column=4)
 b19 = Button(x, text='+',width=3,height=2,bg='medium sea green' ,fg='white',command=lambda:click("+"))
 b19.grid(row=5,column=4)
-b20 = Button(x, text='=',width=3,height=2,bg='medium sea green' ,fg='white')
+b20 = Button(x, text='=',width=3,height=2,bg='medium sea green' ,fg='white',command=equal)
 b20.grid(row=6,column=4)
-
-
 
 
 
