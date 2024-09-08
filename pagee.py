@@ -1,3 +1,4 @@
+## page creation
 from tkinter import *
 
 x = Tk()
@@ -23,7 +24,7 @@ def click():
    
     l4 = Label(x, text='Name',bg='light grey',fg='dark slate grey',width=10, height=3, font='Arial 10 bold')
     l4.grid(row=6, column=1)
-    # x.configure(e1.get())
+    x.configure(e1.get())
     l5 = Label(x, text='Age',bg='light grey',fg='dark slate grey',width=10, height=3, font='Arial 10 bold')
     l5.grid(row=7, column=1)
     # x.configure(e2.get())
