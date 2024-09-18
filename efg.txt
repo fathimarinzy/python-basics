@@ -1,1 +1,6 @@
 hai
+if n and n[-1] in operators and str(a) in operators:
+    #     n = n[:-1] 
+    # c.set(n + str(a)) 
+operators = ['+', '-', '*', '/', '%']  
+

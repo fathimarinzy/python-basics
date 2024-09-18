@@ -7,7 +7,7 @@ e1 = Entry(x, bd=5, justify='center', bg='white', fg='black', textvariable=c)
 e1.grid(row=1, column=1, columnspan=4)
 
 flag = False  
-operators = ['+', '-', '*', '/', '%']  
+
 
 
 def click(a):
@@ -16,11 +16,7 @@ def click(a):
     if flag: 
         c.set("")
         n = ""
-        flag = False
-
-  
-    if n and n[-1] in operators and str(a) in operators:
-        n = n[:-1] 
+        flag = False  
     c.set(n + str(a)) 
 
 
