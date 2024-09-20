@@ -110,14 +110,14 @@ from tkinter import *
 # l.pack(padx=40,pady=40)
 # x.mainloop()
 ######all inside label
-# from tkinter import *
-# x=Tk()
-# x.title("tkinter")
-# l=Label(x,text="name",bg="red")
-# l.pack(side=LEFT,expand=True,fill=BOTH)
-# l=Label(x,text="name",bg="green")
-# l.pack(side=RIGHT,expand=True,fill=BOTH)
-# x.mainloop()
+from tkinter import *
+x=Tk()
+x.title("tkinter")
+l=Label(x,text="name",bg="red")
+l.pack(side=LEFT,expand=True,fill=BOTH)
+l=Label(x,text="name",bg="green")
+l.pack(side=RIGHT,expand=True,fill=BOTH)
+x.mainloop()
 
 
 
@@ -134,14 +134,33 @@ from tkinter import *
 # x.mainloop()
 
 ##dropdown for a option
-from tkinter import *
-x=Tk()
-x.title("tkinter")
+# from tkinter import *
+# x=Tk()
+# x.title("tkinter")
 
-menu=Menu(x)
-new=Menu(menu)
-menu.add_cascade(label='file')
-menu.add
-x.configure(menu=menu)
+# menu=Menu(x)
+# new=Menu(menu)
+# menu.add_cascade(label='file',menu=new)
+# new.add_command(label='new file')
+# new.add_command(label='new window')
+# new.add_command(label='open file')
+# new.add_command(label='open folder')
+# x.configure(menu=menu)
 
-x.mainloop()
+# x.mainloop()
+
+##seperator in a dropdown
+# from tkinter import *
+# x=Tk()
+# x.title("tkinter")
+
+# menu=Menu(x)
+# new=Menu(menu, tearoff=0)
+# menu.add_cascade(label='file',menu=new)
+# new.add_command(label='new file')
+# new.add_command(label='new window')
+# new.add_separator()
+# new.add_command(label='open file')
+# new.add_command(label='open folder')
+# x.configure(menu=menu)
+# x.mainloop()

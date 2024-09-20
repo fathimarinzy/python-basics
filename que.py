@@ -168,7 +168,25 @@
 # substring
 #  consisting of non-space characters only.
 
+####regular expression
+
+#text="Hello,my name is john. i have two cats,mia and max."
+
+# import re
+# text="Hello,my name is john. i have two cats,mia and max."
+# x=re.findall(r"\b\w{3}\b",text)
+# print(x)
+
+#text="contact info@example.com or support@example.com"
+# import re
+# text="contact info@example.com or support@example.com"
+# x=re.findall(r"\b\w+@\w+\.\w+\b",text)
+# print(x)
 
 
+# text="important dates:2022-01-01,2023-05-15,and 2023"
 
-
+import re
+text="important dates:2022-01-01,2023-05-15,and 2023-12-31"
+x=re.findall(r"\b\d{4}\-\d{2}\-\d{2}\b",text)
+print(x)
