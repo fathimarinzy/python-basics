@@ -186,7 +186,7 @@
 
 # text="important dates:2022-01-01,2023-05-15,and 2023"
 
-import re
-text="important dates:2022-01-01,2023-05-15,and 2023-12-31"
-x=re.findall(r"\b\d{4}\-\d{2}\-\d{2}\b",text)
-print(x)
+# import re
+# text="important dates:2022-01-01,2023-05-15,and 2023-12-31"
+# x=re.findall(r"\b\d{4}\-\d{2}\-\d{2}\b",text)
+# print(x)

@@ -1,5 +1,7 @@
 from tkinter import *
 import re
+from tkinter import messagebox,filedialog
+
 x=Tk()
 x.title("tkinter")
 
@@ -43,15 +45,34 @@ def click():
   email=e3.get()
   password=e4.get() 
   confirmpassword = e5.get()
-  x1=re.findall(r"\b\w+\b",name)
-  y=re.findall(r"\b\d{10}\b",phone)  
+  x1=re.findall(r"^[a-zA-Z]+",name)
+  if not x1:
+    messagebox.showwarning('warning','Name must consist letters only  ')
+    return
+  y=re.findall(r"^[9876]\d{9}$",phone) 
+  if not y:
+    messagebox.showwarning('warning','phone number must consist 10 digits  ')
+    return   
   z=re.findall(r"\b\w+@\w+\.\w+\b",email)
-  # v=re.findall(r"\b")
+  if not z:
+    messagebox.showwarning('warning','Email Address is invalid.  ')
+    return  
+
+  v=re.findall(r"\b\S{6}\b",password)
+  if not v:
+     messagebox.showwarning('warning','password must consist of numbers,letters and not spaces ')
+     return
+
+  if password!=confirmpassword:
+    
+     messagebox.showwarning('warning',' password is mismatch')
   print(x1)
   print(y)
   print(z)
-
-
+  print(v)
+# l6=Label(f1,text='Successfully Saved Details')
+# l6.grid(row=7,column=2,columnspan=2)
+  messagebox.showinfo('information','Successfully Saved Details')
 b1=Button(f1,text='submit',command=click)
 b1.grid(row=6,column=2,columnspan=2)
 
