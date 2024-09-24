@@ -184,9 +184,69 @@
 # print(x)
 
 
-# text="important dates:2022-01-01,2023-05-15,and 2023"
+# text="important dates:2022-01-01,2023-05-15,and 2023-12-31"
 
 # import re
 # text="important dates:2022-01-01,2023-05-15,and 2023-12-31"
 # x=re.findall(r"\b\d{4}\-\d{2}\-\d{2}\b",text)
 # print(x)
+
+###que
+"""write a pgm which accept 2 strings as input and create a new string by 
+ combining speecific character from each input strings based on certain criteria."""
+
+a="hello"
+b="world"
+c=""
+for i in range(len(a)):
+    if i%2==0:
+        c+=a[i]
+        c+=b[i]
+print(c)
+
+"""write a program to remove the characters which have a odd index values of given string"""
+# a="rinzy"
+# l=[]
+# for i in range(len(a)):
+#     if i%2==0:
+#         l.append(a[i])
+# print(l)
+
+# """write a python program to seperate positive and negative number from a list"""
+# l=[1,4,5,-6,-7,-8]
+# p=[]
+# n=[]
+# for i in l:
+#     if i>0:
+#         p.append(i)
+#     else:
+#         n.append(i)
+# print(p)
+# print(n)
+
+"""write a program to change the position of every nth value to the (n+1)th  in a list"""
+# inp=[0,1,2,3,4,5]
+# # o=[1,0,3,2,5,4]
+
+# for i in range(0,len(inp),2):
+#     inp[i],inp[i+1]=inp[i+1],inp[i]
+    
+# print(inp)
+
+"""prgrm to calculate the product of elements of a list excluding its duplicates"""
+l=[1,4,3,5,3,6,6]
+n=[]
+pro=1
+for i in l:
+    if i not in n:
+        n.append(i)
+        pro=pro*i
+print("product of elements:",pro)
+
+"""convert tuple to string"""
+
+tu=('a','b','c','d','e','f')
+y=list(tu)
+print(y)
+z="".join(y)
+print(z)
