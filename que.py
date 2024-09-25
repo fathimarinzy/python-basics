@@ -195,14 +195,21 @@
 """write a pgm which accept 2 strings as input and create a new string by 
  combining speecific character from each input strings based on certain criteria."""
 
-a="hello"
-b="world"
-c=""
-for i in range(len(a)):
-    if i%2==0:
-        c+=a[i]
-        c+=b[i]
-print(c)
+# a="hello"
+# b="world"
+# c=""
+# for i in range(len(a)):
+#     if i%2==0:
+#         c+=a[i]
+#         c+=b[i]
+# print(c)
+#another method
+# a="hello"
+# b="world"
+# c=a[len(a)//2]
+# d=b[len(b)//2]
+# re=a[0]+b[0]+c+d+a[-1]+b[-1]
+# print(re)
 
 """write a program to remove the characters which have a odd index values of given string"""
 # a="rinzy"
@@ -234,19 +241,56 @@ print(c)
 # print(inp)
 
 """prgrm to calculate the product of elements of a list excluding its duplicates"""
-l=[1,4,3,5,3,6,6]
-n=[]
-pro=1
-for i in l:
-    if i not in n:
-        n.append(i)
-        pro=pro*i
-print("product of elements:",pro)
+# l=[1,4,3,5,3,6,6]
+# n=[]
+# pro=1
+# for i in l:
+#     if i not in n:
+#         n.append(i)
+#         pro=pro*i
+# print("product of elements:",pro)
 
 """convert tuple to string"""
 
-tu=('a','b','c','d','e','f')
-y=list(tu)
-print(y)
-z="".join(y)
-print(z)
+# tu=('a','b','c','d','e','f')
+# y=list(tu)
+# print(y)
+# z="".join(y)
+# print(z)
+
+"""prgrm that counts the number of string that have a length greater than 2 and start and end
+ with the same charcter"""
+
+# a=['ammu','mom','dad','car','is']
+# b=[]
+# for i in a:
+#     if  len(i)>2:
+#         if i[0]==i[-1]:
+#             b.append(i)
+# print(b)
+# print(len(b))
+
+
+"""prgrm to print length of unique character in a string """
+
+# a="helloworld"
+# b=""
+# for i in a:
+#     if i not in b:
+#         b+=i
+# print(b)
+# print(len(b))
+
+"""given list of words .write a python prgrm  to count how many anagram exist for each unique grouping of letters.
+two words are considered anagrams if they contain the same charcters in a different order"""
+
+inp=['eat','tea','ten','bat','ate','net','dub','bud']
+out={}
+for i in inp:
+    z=" ".join(sorted(i))
+    if z in out:
+        out[z]+=1
+    else:
+        out[z]=1
+print(out)
+    

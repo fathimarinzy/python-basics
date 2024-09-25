@@ -97,13 +97,13 @@ import re
 # # x=re.findall("[^0-9]",s)
 # # print(x)
 
-s="ASDERFGHH this is something@@## special12345"       ## to check the set start with ASD
-x=re.findall("^ASD",s)
-print(x)
+# s="ASDERFGHH this is something@@## special12345"       ## to check the set start with ASD
+# x=re.findall("^ASD",s)
+# print(x)
 
-s="ASDERFGHH this is something@@## special12345"       ## to check the set end with 12345
-x=re.findall("12345$",s)
-print(x)
+# s="ASDERFGHH this is something@@## special12345"       ## to check the set end with 12345
+# x=re.findall("12345$",s)
+# print(x)
 
 # # s="ASDERFGHH this is helo something@@## special12345"       ## to check the helo inthe set
 # # x=re.findall("he.o",s)
@@ -132,3 +132,116 @@ print(x)
 # s="hel 123ASDERFGHH this is 456helo something@@## special12345"       
 # x=re.findall("[0-9]+",s)
 # print(x)
+
+
+
+"""search"""
+
+# text='hello my name is ammu'
+# x=re.search("ammu",text)
+# print(x)
+
+# text='hello my name is ammu'
+# x=re.search("hello",text)
+# print(x)
+
+# text='hello my name is ammu'
+# x=re.search("hai",text)
+# print(x)
+
+# text='hello ammu,how are you ammu'
+# x=re.search("ammu",text)
+# print(x)
+
+"""methods in search"""
+
+# text='hello ammu,how are you ammu'
+# x=re.search("ammu",text)
+# print(x)
+# print(x.span())
+# print(x.string)
+# print(x.start())
+# print(x.end())
+# print(x.group())
+
+
+# text='hello AMMU,how are you ammu'
+# x=re.search("ammu",text)
+# print(x)
+
+# text='hello AMMU,how are you ammu'
+# x=re.search("ammu",text,re.IGNORECASE)
+# print(x)
+
+
+# text='hello ammu,how are you ammu'
+# x=re.search("^hello",text)
+# print(x)
+
+# text='hello ammu,how are you ammu'
+# x=re.search("ammu$",text)
+# print(x)
+
+# text='hello ammu123,how are456 you ammu789'
+# x=re.search("\d+",text)
+# print(x)
+"""split"""
+
+# text='hello ammu123,how are456 you ammu789'
+# x=re.split(" ",text)
+# print(x)
+
+# text='hello ammu123,how are456 you ammu789'
+# x=re.split(" ",text,2)
+# print(x)
+
+# text='hello ammu123,how are456 you ammu789'
+# x=re.split("\d+",text)
+# print(x)
+
+
+# text="apple123orange123grapes123mango"
+# x=re.split("\d+",text)
+# print(x)
+
+text="apple-orange:grape|mango"
+x=re.split("[-:|]",text)
+print(x)
+
+"""sub"""
+# text="hello hello hello hello hello"
+# x=re.sub("ll","@",text)
+# print(x)
+
+# text="hello hello hello hello hello"
+# x=re.sub("ll","@",text,2)
+# print(x)
+
+
+# text="my name is ammu and my phone number is 9876543210"
+# x=re.sub("\d{10}","xxxxxxxxxx",text,2)
+# print(x)
+
+
+# text="hello hello hello HELLO HELLO"
+# x=re.sub("ll","@",text)
+# print(x)
+
+
+# text="hello hello hello HELLO HELLO"
+# x=re.sub("ll","@",text,5,re.IGNORECASE)
+# print(x)
+
+"""match"""
+
+text="hello my name is ammu"
+x=re.search("ammu",text)
+print(x)
+
+text="hello my name is ammu"
+x=re.match("ammu",text)
+print(x)
+
+text="hello my name is ammu"
+x=re.match("hello",text)
+print(x)
