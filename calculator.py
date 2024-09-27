@@ -37,8 +37,7 @@ def backspace():
     c.set(back[:-1])
 
 
-b1 = Button(x, text='clear', width=3, height=2, bg='medium sea green', fg='white', command=clear)
-b1.grid(row=2, column=1)
+                
 b2 = Button(x, text=7, width=3, height=2, bg='medium sea green', fg='white', command=lambda: click(7))
 b2.grid(row=3, column=1)
 b3 = Button(x, text='4', width=3, height=2, bg='medium sea green', fg='white', command=lambda: click(4))

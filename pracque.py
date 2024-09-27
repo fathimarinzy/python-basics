@@ -108,14 +108,29 @@ Output: 2
 #     print(i)
 
 """Write a program to find the factorial of a given number using a while loop."""
-n=int(input("enter the number:"))
+# n=int(input("enter the number:"))
 
-fac=1
-inp=n
-while inp>0:
-    fac*=inp
-    inp-=1
-  
-print(fac)
+# fac=1
+# inp=n
+# while inp>0:
+#     fac*=inp
+#     inp-=1
+# print(fac)
 
-    
+"""Write a program to reverse the digits of a number using a while loop."""
+# n=int(input("enter the number:"))
+# rev=0
+# while n>0:
+#     c=n%10
+#     rev=rev*10+c
+#     n//=10
+# print(rev)
+
+"""Write a Python program that continues taking input from the user until they enter 'exit'"""
+n=int(input("\n1.taking input\n2.exit \nEnter the choice"))
+while n>0:
+    if n==1:
+        b=int(input("enter the number:"))
+    elif n==2:
+        print("exiting")
+        break

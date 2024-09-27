@@ -4,7 +4,7 @@
 # a="heelo"
 # print(a)
 
-# a=int(input("enter the NAME:"))
+# a=str(input("enter the NAME:"))
 # print(a)
 # print(type(a))
 
@@ -22,9 +22,9 @@
 
 
 # a="helloworld"
-# # print(a[2:6])
-# # 
-# # print(a[-5:-1])
+# print(a[2:6])
+# # # 
+# print(a[-5:-1])
 # # print(a[::-1])
 # # print(a[::-2])
 
@@ -33,11 +33,11 @@
 
 # a="hello"
 # b="world"
-# # print(a,b)
-# # print(a+b)
-# # print(a+" "+b)
+# print(a,b)
+# print(a+b)
+# print(a+" "+b)
 
-# a="hello world"
+a="hello world"
 # print(dir(a))
 # print(a.upper())
 # print(a.lower())
@@ -45,7 +45,7 @@
 # print(a.count("l"))
 # print(a.index("o"))
 # print(a.find("m"))
-# print(a.rindex("l"))
+# print(a.rindex("o"))
 # print(a.rfind("l"))
 # print(a.title())
 # print(a.capitalize())
