@@ -37,7 +37,7 @@
 # print(a+b)
 # print(a+" "+b)
 
-a="hello world"
+# a="hello world"
 # print(dir(a))
 # print(a.upper())
 # print(a.lower())
@@ -328,7 +328,7 @@ a="hello world"
 # a="ammu"
 # print(f"my name is{a}")
 
-# a="hello\nhai\nhello"
+# # a="hello\nhai\nhello"
 # # a=a.split()
 # # print(a)
 # a=a.splitlines(True)
@@ -337,7 +337,7 @@ a="hello world"
 # a="hello world"
 # result=a.maketrans("hello","12345")
 # y=a.translate(result)
-# print(y)
+# # print(y)
 
 # a={"name":"ammu","age":10,"course":"python"}
 # s={'"NAME":{name},"AGE":{age}'.format_map(a)}
@@ -369,7 +369,7 @@ a="hello world"
 
 # a="wel\tcome"
 # # print(a)
-# print(a.expandtabs())
+# # print(a.expandtabs())
 # print(a.expandtabs(1))
 # print(a.expandtabs(2))
 # print(a.expandtabs(3))
@@ -404,10 +404,10 @@ a="hello world"
 # print(a.isascii())
 
 # a=65
-# print(chr(a))
+# # print(chr(a))
 
-# print(ord(65))
-
+# char = chr(a)
+# print(ord(char))
 # text="string"
 # a=text.encode("ascii")
 # print(a)  
