@@ -127,10 +127,38 @@ Output: 2
 # print(rev)
 
 """Write a Python program that continues taking input from the user until they enter 'exit'"""
-n=int(input("\n1.taking input\n2.exit \nEnter the choice"))
-while n>0:
-    if n==1:
-        b=int(input("enter the number:"))
-    elif n==2:
-        print("exiting")
-        break
+# n=int(input("\n1.taking input\n2.exit \nEnter the choice"))
+# while n>0:
+#     if n==1:
+#         b=int(input("enter the number:"))
+#     elif n==2:
+#         print("exiting")
+#         break
+
+
+"""Write a Python program to check if a number is positive, negative, or zero using if-else."""
+
+# n=int(input("enter the number:"))
+# if n>0:
+#     print("its a positive number")
+# elif n<0:
+#       print("its a negative number")
+# elif n==0:
+#        print("its a zero")
+# else:
+#         print("its invalid number")
+      
+
+"""Write a Python program to check if a number is divisible by both 3 and 5 using if-else."""
+
+# n=int(input("enter the number="))
+# if n%3==0 and n%5==0:
+#       print("it is divisible both by 3 and 5")
+# else:
+#       print("not divisible")
+
+"""Write a Python program to print a multiplication table (from 1 to 10) using a nested for loop."""
+# n=int(input("enter the number:"))
+# for i in range(1,11):
+#     for j in range(1,11):
+#         print(f"{j}x{i}={i*j}")
