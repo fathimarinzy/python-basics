@@ -849,18 +849,29 @@
 # emp1=Employee('corey','user',500000)
 # print(emp1.fullname())
 
-class Employee:
-    noofemplo =0
-    def __init__(self,first,last,pay):
-        self.fname=first
-        self.lname=last
-        self.pay=pay
-        Employee.noofemplo +=1
-    def fullname(self):
-        return '{} {}'.format(self.fname,self.lname)
+# class Employee:
+#     noofemplo =0
+#     def __init__(self,first,last,pay):
+#         self.fname=first
+#         self.lname=last
+#         self.pay=pay
+#         Employee.noofemplo +=1
+#     def fullname(self):
+#         return '{} {}'.format(self.fname,self.lname)
 
-emp1=Employee('corey','user',500000)
-emp2=Employee('laila','user',500000)
-# print(emp1.fullname())
+# emp1=Employee('corey','user',500000)
+# emp2=Employee('laila','user',500000)
+# # print(emp1.fullname())
     
-print(Employee.noofemplo)
+# print(Employee.noofemplo)
+
+
+###tkinter
+import tkinter as tk
+# tk._test() 
+root=tk.Tk()
+root.title("Simple App")
+
+
+
+root.mainloop()
