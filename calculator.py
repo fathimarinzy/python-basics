@@ -12,13 +12,18 @@ flag = False
 
 def click(a):
     global flag
+    operators = ['+', '-', '*', '/', '%']
+    
     n = c.get()
-    if flag: 
+    if flag:
         c.set("")
         n = ""
-        flag = False  
-    c.set(n + str(a)) 
+        flag = False
+    
+    if n and n[-1] in operators and str(a) in operators:
+        n = n[:-1] 
 
+    c.set(n + str(a))
 
 def equal():
     global flag
