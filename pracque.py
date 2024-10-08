@@ -163,6 +163,7 @@ Output: 2
 #     for j in range(1,11):
 #         print(f"{j}x{i}={i*j}")
 
+"""list based questions"""
 
 """How do you append an element(example 4) to a list?
 my_list = [1, 2, 3]"""
@@ -487,3 +488,120 @@ my_list = [1, 2, 3, 4, 5, 6]
 # b=max(my_list)
 # print("max value:",b)
 # print("min value:",a)
+
+
+"""string based questions"""
+
+
+# 1. Count the frequency of each character in a string.
+# # input
+# string = "hello world"
+# output
+# {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
+
+# dic={}
+# string = "hello world"
+# for i in string:
+#     if i in dic:
+#         dic[i]+=1
+#     else:
+#         dic[i]=1
+# print(dic)
+
+
+# 2.Remove all vowels from a given string.
+# input
+# string = "This is a test string"
+# Output: "Ths s  tst strng"
+
+# string = "This is a test string"
+
+# vo=['a','e','i','o','u']
+# b=list(string)
+# for i in string:
+#     if i in vo:
+#         b.remove(i)
+# c=" ".join(b)       
+# print(c)
+        
+
+
+# 3. Capitalize the first letter of each word in a string.
+# input
+# string = "hello world"
+# Output: "Hello World"
+# string = "hello world"
+# a=string.title()
+# print(a)
+
+# 4.Check if a substring exists within a given string.
+# input
+# main_string = "Python programming is fun"
+# sub_string = "programming"
+# Output: True
+
+# main_string = "Python programming is fun"
+# a = "programming"
+# if a in  main_string:
+#     print("True")
+# else:
+#     print("false")
+
+# 5.Replace all occurrences of a substring in a string.
+# input
+# string = "Python is awesome. Python is dynamic." 
+# Output: "Java is awesome. Java is dynamic."
+
+# string = "Python is awesome. Python is dynamic." 
+# a=string.replace("Python","Java")
+# print(a)
+
+# 6.Remove duplicate characters from a string.
+# string = "programming"
+# Output: "progamin"
+
+# string = "programming"
+# a=""
+# for i in string:
+#     if i not in a:
+#         a+=i
+# print(a)
+
+
+
+# 7.Find the longest word in a sentence.
+# string = "I love programming in Python"
+# a=string.split()
+# b=max(a)
+# print(b)
+
+
+# 8.8.Reverse the words in a given string.
+# string = "Hello World"
+# a=string.split()
+# a.reverse()
+# b=" ".join(a)
+# print(b)
+
+
+# 9.Check if two strings are anagrams.
+# string1 = "listen"
+# string2 = "silent"
+# a = sorted("listen")
+# b = sorted("silent")
+# print(a)
+# print(b)
+# if a==b:
+#     print("true")
+# else:
+#     print("false")
+
+
+# 10. Check if a given string is a palindrome.
+string = "A man a plan a canal Panama"
+string=string.lower().replace(" ","")
+print(string)
+if string ==string[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")
