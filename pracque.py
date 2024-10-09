@@ -598,10 +598,12 @@ my_list = [1, 2, 3, 4, 5, 6]
 
 
 # 10. Check if a given string is a palindrome.
-string = "A man a plan a canal Panama"
-string=string.lower().replace(" ","")
-print(string)
-if string ==string[::-1]:
-    print("palindrome")
-else:
-    print("not palindrome")
+# string = "A man a plan a canal Panama"
+# string=string.lower().replace(" ","")
+# print(string)
+# if string ==string[::-1]:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+ 
