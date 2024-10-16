@@ -75,5 +75,4 @@ def click():
   messagebox.showinfo('information','Successfully Saved Details')
 b1=Button(f1,text='submit',command=click)
 b1.grid(row=6,column=2,columnspan=2)
-
 x.mainloop()
