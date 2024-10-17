@@ -336,32 +336,53 @@
 
 #methods common
 #sorted 
-l=[10,12,81,54,60]
-print(sorted(l))
+# l=[10,12,81,54,60]
+# print(sorted(l))
 
-l=[10,12,81,54,60]
-print(sorted(l,reverse=True))
+# l=[10,12,81,54,60]
+# print(sorted(l,reverse=True))
 
-l=['abc','python','apple','bat','java']
-print(sorted(l,key=len))
+# l=['abc','python','apple','bat','java']
+# print(sorted(l,key=len))
 
-# #reversed
-l=[10,12,81,54,60]
-print(list(reversed(l)))
+# # #reversed
+# l=[10,12,81,54,60]
+# print(list(reversed(l)))
 
-for i in reversed(range(5)):
-    print(i)
+# for i in reversed(range(5)):
+#     print(i)
 
-#reverse a string using reversed
-l="hello"
-x=''.join(reversed(l))
-print(x)
+# #reverse a string using reversed
+# l="hello"
+# x=''.join(reversed(l))
+# print(x)
 
 
-#enumerate method
-l=[1,2,3,4,5,6]
-for i,j in enumerate(l):
-    print(i,j)
+# #enumerate method
+# l=[1,2,3,4,5,6]
+# for i,j in enumerate(l):
+#     print(i,j)
 
-for i,j in enumerate (l,start=1):
-    print(i,j)
+# for i,j in enumerate (l,start=1):
+#     print(i,j)
+
+
+"""pass by value"""
+
+# def display (a):
+#     print(a,"inside")
+#     a=10
+#     print(a,"inside")
+# a=40
+# display(a)
+# print(a,"outside")
+
+"""pass by reference"""
+
+def display (a):
+    print(a,"inside")
+    a[0]=2000
+    print(a,"inside")
+a=[10,20,30]
+display(a)
+print(a,"outside")
