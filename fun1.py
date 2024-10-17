@@ -366,16 +366,15 @@
 # for i,j in enumerate (l,start=1):
 #     print(i,j)
 
-
 """pass by value"""
 
-# def display (a):
-#     print(a,"inside")
-#     a=10
-#     print(a,"inside")
-# a=40
-# display(a)
-# print(a,"outside")
+def display (a):
+    print(a,"inside")
+    a=10
+    print(a,"inside")
+a=40
+display(a)
+print(a,"outside")
 
 """pass by reference"""
 
