@@ -284,13 +284,13 @@
 """given list of words .write a python prgrm  to count how many anagram exist for each unique grouping of letters.
 two words are considered anagrams if they contain the same charcters in a different order"""
 
-inp=['eat','tea','ten','bat','ate','net','dub','bud']
-out={}
-for i in inp:
-    z=" ".join(sorted(i))
-    if z in out:
-        out[z]+=1
-    else:
-        out[z]=1
-print(out)
+# inp=['eat','tea','ten','bat','ate','net','dub','bud']
+# out={}
+# for i in inp:
+#     z=" ".join(sorted(i))
+#     if z in out:
+#         out[z]+=1
+#     else:
+#         out[z]=1
+# print(out)
     

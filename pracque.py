@@ -606,4 +606,67 @@ my_list = [1, 2, 3, 4, 5, 6]
 # else:
 #     print("not palindrome")
 
- 
+"""regularexpression"""
+
+# Write a regular expression to find all occurrences of the word "cat" or "dog" in a given text.
+# text = "The Cat chased the dog. A small cat and a big DOG played together."
+# import re
+# c=re.findall(r"cat|dog",text,re.IGNORECASE)
+# print(c)
+
+# Write a regex to find all sequences of exactly 3 digits in a text. For example, in the text 
+# "My number is 123 and his number is 4567", the output should be ['123'].
+# text = "My number is 123 and his number is 4567"
+# import re
+# c=re.findall(r"\b\d{3}\b",text)
+# print(c)
+
+# Write a regex to validate an email address. The regex 
+# should account for common email formats, such as username@domain.com.
+# email = "user.name@example.com"
+# import re
+# c=r"\b\w+\.\w+@\w+\.\w+\b"
+# d=re.match(c,email)
+# print(d)
+
+# Write a regular expression to extract dates in the format DD/MM/YYYY from a given text.
+# Example: From the text "I have a meeting on 15/10/2023 and another one on 03/12/2024", 
+# the output should be ['15/10/2023', '03/12/2024'].
+
+# text ="I have a meeting on 15/10/2023 and another one on 03/12/2024"
+# import re
+# c=re.findall(r"\b\d{2}\/\d{2}\/\d{4}\b",text)
+# print(c)
+
+# Write a regex to extract all words from a sentence. 
+# A word is defined as a sequence of letters and can be delimited by spaces or punctuation marks.
+# sentence = "Hello, world! This is a test."
+# import re
+# c=re.findall(r"\b\w+\b",sentence)
+# print(c)
+
+# Write a regex to find all hashtags from a given string.
+# Example: For the input "Loving this #sunset at the #beach", the output should be ['#sunset', '#beach'].
+# a= "Loving this #sunset at the #beach"
+# import re
+# b=re.findall(r"[#]\w+",a)
+# print(b)
+
+# Write a regular expression to extract the file extension (e.g., .pdf, .txt, etc.) from file names.
+# Example: "resume.pdf", "report.docx", "image.jpeg" should result in ['.pdf', '.docx', '.jpeg'].
+
+# a=["resume.pdf", "report.docx", "image.jpeg"]
+# b=" ".join(a)
+# import re
+# c=re.findall(r"\b\.\w+\b",b)
+# print(c)
+
+# write a regex to remove all HTML tags from a given string.
+# Example: From the text "<p>Hello, World!</p>", the output should be "Hello, World!".
+# text ="<p>Hello, World!</p>"
+# import re
+# a=re.findall(r"H.+!",text)
+# print(a)
+
+# Write a regex to validate phone numbers in the format (XXX) XXX-XXXX where X is a digit.
+# Example: Valid phone number: (123) 456-7890.

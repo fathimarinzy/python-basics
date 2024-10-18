@@ -21,9 +21,9 @@ import re
 # x=re.findall(r"\S",s)                ## print all words without spaces
 # print(x)
 
-# # s="this is something@@## special12345"    ## print all numbers
-# # x=re.findall("\d",s)
-# # print(x)
+# s="this is something@@## special12345"    ## print all numbers
+# x=re.findall(r"\d",s)
+# print(x)
 
 
 # s="this is something@@## special12345"    ## print all items ina given set without number
@@ -35,16 +35,16 @@ import re
 # x=re.findall("\w",s)
 # print(x)
 
-# # s="this is something@@## special12345"    ## print all special character and spaces in set
-# # x=re.findall("\W",s)
-# # print(x)
+# s="this is something@@## special12345"    ## print all special character and spaces in set
+# x=re.findall("\W",s)
+# print(x)
 
-# s=" this is something@@## special12345"    ## to check start with "this"
-# x=re.findall("\Athis",s)
+# s="this is something@@## special12345"    ## to check start with "this"
+# x=re.findall(r"\Athis",s)
 # print(x)
 
 # s="this is something@@## special12345"    ## to check end with "special12345"
-# x=re.findall("special12345\Z",s)
+# x=re.findall(r"special12345\Z",s)
 # print(x)
 
 # s="this is something@@## special12345"    
@@ -70,14 +70,14 @@ import re
 # x=re.findall("[agsret]",s)
 # print(x)
 
-# # s="this is something@@## special12345"       ## print a to z small alphabets
-# # x=re.findall("[a-z]",s)
-# # print(x)
+# s="this is something@@## special12345"       ## print a to z small alphabets
+# x=re.findall("[a-z]",s)
+# print(x)
 
 
-# # s=" AAGSFSFSFSFSFSFSF this is something@@## special12345"       ## print A to Z capital alphabets
-# # x=re.findall("[A-Z]",s)
-# # print(x)
+# s=" AAGSFSFSFSFSFSFSF this is something@@## special12345"       ## print A to Z capital alphabets
+# x=re.findall("[A-Z]",s)
+# print(x)
 
 
 # # s="this is something@@## special12345"       ## print 1 to 9 numbers
@@ -183,8 +183,9 @@ import re
 # print(x)
 
 # text='hello ammu123,how are456 you ammu789'
-# x=re.search("\d+",text)
+# x=re.search(r"\d+",text)
 # print(x)
+
 """split"""
 
 # text='hello ammu123,how are456 you ammu789'
@@ -198,7 +199,6 @@ import re
 # text='hello ammu123,how are456 you ammu789'
 # x=re.split("\d+",text)
 # print(x)
-
 
 # text="apple123orange123grapes123mango"
 # x=re.split("\d+",text)
@@ -238,10 +238,10 @@ import re
 # x=re.search("ammu",text)
 # print(x)
 
-# text="hello my name is ammu"
-# x=re.match("ammu",text)
-# print(x)
+text="hello my name is ammu"
+x=re.match("ammu",text)
+print(x)
 
-# text="hello my name is ammu"
-# x=re.match("hello",text)
-# print(x)
+text="hello my name is ammu"
+x=re.match("hello",text)
+print(x)
