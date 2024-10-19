@@ -723,10 +723,118 @@ my_list = [1, 2, 3, 4, 5, 6]
 # Write a regular expression to find all palindrome words (words that read the same backward as forward) in a sentence.
 # Example: From the input "Anna and Bob went to the civic center", the output should be ['Anna', 'Bob', 'civic'].
 
-a="Anna and Bob went to the civic center"
-import re
-v=re.findall(r"\b\w+\b",a)
-print(v)
-for i in v:
-    if i.lower()==i[::-1].lower():
-        print( "palindrome=",i)
+# a="Anna and Bob went to the civic center"
+# import re
+# v=re.findall(r"\b\w+\b",a)
+# print(v)
+# for i in v:
+#     if i.lower()==i[::-1].lower():
+#         print( "palindrome=",i)
+
+
+"""file"""
+# Write a Python program that performs the following operations on a text file named efg.txt:
+# Write: Open the file in write mode and write the string "hai" to it.
+# Read: Close the file and then reopen it in read mode. Read the contents of the file.
+# Display: Print the contents of the file as a list of lines.
+# Join: Join the lines into a single string and calculate the length of this string.
+# Output: Print the length of the string.
+
+# f=open("fgh.txt","w")
+# f.write("hai")
+# f.close()
+# f=open("fgh.txt","r")
+# # print(f.read())
+# i=f.readlines()
+# print(i)
+# a=" ".join(i)
+# print(len(a),a)
+# f.close()
+
+
+"""function"""
+# Write a function sum_of_two(a, b) that takes 
+# two numbers as input and returns their sum.
+
+# def tue(a,b):
+#     return a+b
+# print(tue(10,30) )
+
+
+# Write a function is_even(n) that returns True if the 
+# number is even and False if it is odd.
+# def display(a):
+#     if a%2==0:
+#          print("True")
+#     else:
+#         print("False")
+# display(4)
+
+# Write a function factorial(n) that calculates the factorial 
+# of a given number n.
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#        return n*factorial(n-1)
+      
+# v=factorial(5)
+# print(v)
+
+# def factorial(n):
+#     r=1
+#     for i in range(2,n+1):
+#         r*=i
+#     return r
+
+# print(factorial(5))
+
+# Write a function is_palindrome(s) that checks 
+# if a given string is a palindrome
+
+# def palindrome(n):
+#     if n==n[::-1]:
+#         print("palindrome")
+#     else:
+#         print("not")
+
+# palindrome("malayalam")
+# palindrome("hello")
+
+# Write a function count_vowels(s) that counts how many 
+# vowels are in a given string
+
+# def count(v):
+#     a=['a','e','i','o','u']
+#     b=[]
+#     for i in v:
+#         if i in a:
+#             b.append(i)
+#     return len(b)
+
+# print(count("hello"))
+
+
+# Write a function fibonacci(n) that generates the first n numbers 
+# of the Fibonacci sequence.
+# def fibnocci(n):
+#     a=[]
+#     for i in range(n):
+#         if i==0:
+#             a.append(0)
+#         elif i==1:
+#             a.append(1)
+#         else:
+#             b=a[i-1]+a[i-2]
+#             a.append(b)
+#     return a
+# print(fibnocci(5))
+
+# Write a function find_max(lst) that takes a list of numbers 
+# and returns the maximum value.
+def maz(n):
+   return max(n)
+print(maz([3,4,5,6]))
+
+
+

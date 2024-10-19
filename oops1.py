@@ -1,9 +1,9 @@
-# # #create a class
-# # class Bird:
-# #     eyes=2
-# #     beak=1
-# # parrot=Bird()
-# # print(parrot.eyes)
+# # # #create a class
+# class Bird:
+#     eyes=2
+#     beak=1
+# parrot=Bird()
+# print(parrot.eyes)
 # # print(parrot.beak)
 
 # # # mul objects with one class
@@ -18,84 +18,82 @@
 # # print(peacock.eyes)
 # # print(peacock.beak)
 
-# # class Bird:
-# #     eyes=2
-# #     beak=1
-# # parrot=Bird()
-# # print(parrot.beak)
-# # parrot.eyes=1
-# # print(parrot.eyes,"eyes")
-# # peacock=Bird()
-# # print(peacock.eyes)
-# # print(peacock.beak)
+# class Bird:
+#     eyes=2
+#     beak=1
+# parrot=Bird()
+# print(parrot.beak)
+# parrot.eyes=1
+# print(parrot.eyes,"eyes")
+# peacock=Bird()
+# # # print(peacock.eyes)
+# # # print(peacock.beak)
 
-# # # give a method
-# # class Bird:
-# #     eyes=2
-# #     beak=1
-# #     def fly(self):
-# #         print("parrot")
-# # parrot=Bird()
-# # print(parrot.beak)
-# # parrot.eyes=1
-# # print(parrot.eyes,"eyes")
-# # parrot.fly()
+# # # # give a method
+# class Bird:
+#     eyes=2
+#     beak=1
+#     def fly(self):
+#         print("parrot")
+# parrot=Bird()
+# print(parrot.beak)
+# parrot.eyes=1
+# # # print(parrot.eyes,"eyes")
+# parrot.fly()
 # # peacock=Bird()
 # # print(peacock.eyes)
 # # print(peacock.beak)
 # # peacock.fly()
 
-# # class Bird:
-# #     eyes=2
-# #     beak=1
-# #     def fly(self,a):
-# #      print(a)
-# # parrot=Bird()
-# # # print(parrot.beak)
-# # # parrot.eyes=1
-# # # print(parrot.eyes,"eyes")
-# # parrot.fly("parrot")
-# # peacock=Bird()
-# # print(peacock.eyes)
-# # print(peacock.beak)
-# # peacock.fly("peacock")
+# class Bird:
+#     eyes=2
+#     beak=1
+#     def fly(self,a):
+#      print(a)
+# parrot=Bird()
+# print(parrot.beak)
+# parrot.eyes=1
+# print(parrot.eyes,"eyes")
+# parrot.fly("parrot")
+# peacock=Bird()
+# print(peacock.eyes)
+# print(peacock.beak)
+# peacock.fly("peacock")
 
-# #    #use of instance variable
-# # class Bird:
-# #     eyes=2
-# #     beak=1
-# #     def fly(self,a):
-# #        self.a=a
-# #        print(a)
-# #     def walk(self):
-# #         print(self.a)
+   #use of instance variable
+# class Bird:
+#     eyes=2
+#     beak=1
+#     def fly(self,a):
+#        self.a=a
+#        print(a)
+#     def walk(self):
+#         print(self.a)
+# parrot=Bird()
+# parrot.fly("parrot")
 
-
-# # parrot=Bird()
-
-# # parrot.fly("parrot")
-# # parrot.walk()
-# # parrot.eyes=1
-# # peacock=Bird()
-# # peacock.fly("peacock")
+# parrot.walk()
+# parrot.eyes=1
+# peacock=Bird()
+# peacock.fly("peacock")
 
 
 # # #create a 3 methods
 
-# # class Add:
-# #     def num(self,a,b):
-# #         self.a=a
-# #         self.b=b
-# #         print(b)
-# #     def calc(self):
+# class Add:
+#     def num(self,a,b):
+#         self.a=a
+#         self.b=b
+#         print(b)
+#     def calc(self):
        
-# #         self.c=self.a+self.b
-# #     def res(self):
-# #         print(self.c)
-# # add=Add()
-# # add.num(10,20)
-# # add.calc()
-# # add.res()
+#         self.c=self.a+self.b
+#     def res(self):
+#         print(self.c)
+# add=Add()
+# add.num(10,20)
+# add.calc()
+# add.res()
 
 # # #3 methods class=rectangle calculate area and perimeter
 
@@ -138,7 +136,7 @@
 # #     def deposit(self,deposit):
        
 # #         self.balance+=deposit
-# #         print("current balance",self.balance)
+# #         print("current balance=",self.balance)
        
 # #     def withdraw(self,withdraw):
 # #         if withdraw> self.balance:
@@ -175,54 +173,54 @@
 # #                 break
 
 
-# # #contruct
-# # class student:
-# #     college="abc"
-# #     def __init__(self,a):
-# #         print("welcome",a)
-# #     def study(self):
-# #         print("studying")
-# # ammu=student(1000)       
-# # print(ammu.college)
-# # ammu.study()
+# # # #contruct
+# class student:
+#     college="abc"
+#     def __init__(self,a):
+#         print("welcome",a)
+#     def study(self):
+#         print("studying")
+# ammu=student(1000)       
+# print(ammu.college)
+# ammu.study()
 
 
 # # #create class person that initialize with name and age with include a method
 # # # displAY info that prints the name and age of tht person
-# # class Person:
+# class Person:
     
-# #     def __init__(self,name,age) :
-# #         self.name=name
-# #         self.age=age
-# #     def display(self):
-# #         print("name",self.name)
-# #         print("name",self.age)
-# # p=Person("rinzy",19)
-# # p.display()
-# # # #
-# # class Rectangle:
-# #     def __init__(self,length,breadth):
-# #         self.length=length
-# #         self.breadth=breadth
-# #     def area(self):
-# #         print("area=",self.length*self.breadth)
-# # p=Rectangle(10,30)
-# # p.area()
+#     def __init__(self,name,age) :
+#         self.name=name
+#         self.age=age
+#     def display(self):
+#         print("name",self.name)
+#         print("age",self.age)
+# p=Person("rinzy",19)
+# p.display()
+# # #
+# class Rectangle:
+#     def __init__(self,length,breadth):
+#         self.length=length
+#         self.breadth=breadth
+#     def area(self):
+#         print("area=",self.length*self.breadth)
+# p=Rectangle(10,30)
+# p.area()
 
-# # # #
-# # class Student:
-# #     def __init__(self,name,grade):
+# # #
+# class Student:
+#     def __init__(self,name,grade):
         
-# #         self.name=name
-# #         self.grade=grade
-# #     def average(self):
-# #        self.avg=sum(self.grade)//len(self.grade)
-# #     def display(self):
-# #         print("name=",self.name)
-# #         print("grade=",self.grade)
-# #         print("average=",self.avg)
-# # p=Student("rinzy",[85,90,78,92])
-# # p.average()
+#         self.name=name
+#         self.grade=grade
+#     def average(self):
+#        self.avg=sum(self.grade)//len(self.grade)
+#     def display(self):
+#         print("name=",self.name)
+#         print("grade=",self.grade)
+#         print("average=",self.avg)
+# p=Student("rinzy",[85,90,78,92])
+# p.average()
 
 # # #inheritance
 # ##single inheritance
@@ -635,20 +633,20 @@
 # print(Student.class_variable,"pppppp")
 
 # #class method
-class Student:
-    class_variable=0
-    def __init__(self,name):
-        self.name=name
-    @classmethod
-    def modify(cls):
-        cls.class_variable+=1          
-s=Student("ammu")
-print(s.name)
-print(Student.class_variable)
+# class Student:
+#     class_variable=0
+#     def __init__(self,name):
+#         self.name=name
+#     @classmethod
+#     def modify(cls):
+#         cls.class_variable+=1          
+# s=Student("ammu")
+# print(s.name)
+# print(Student.class_variable)
 
-Student.modify()
+# Student.modify()
 
-print(Student.class_variable,"pppppp")
+# print(Student.class_variable,"pppppp")
 
 
 # #static method
@@ -689,13 +687,13 @@ print(Student.class_variable,"pppppp")
 
 
 ##abstraction
-from abc import ABC ,abstractmethod
-class Polygon(ABC):
-    @abstractmethod
-    def area(self):
-        pass
-class Rectangle(Polygon):
-    def area(self):
-        print("area")
-r=Rectangle()
-r.area()
+# from abc import ABC ,abstractmethod
+# class Polygon(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+# class Rectangle(Polygon):
+#     def area(self):
+#         print("area")
+# r=Rectangle()
+# r.area()

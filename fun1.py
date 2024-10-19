@@ -368,20 +368,20 @@
 
 """pass by value"""
 
-def display (a):
-    print(a,"inside")
-    a=10
-    print(a,"inside")
-a=40
-display(a)
-print(a,"outside")
+# def display (a):
+#     print(a,"inside")
+#     a=10
+#     print(a,"inside")
+# a=40
+# display(a)
+# print(a,"outside")
 
-"""pass by reference"""
+# """pass by reference"""
 
-def display (a):
-    print(a,"inside")
-    a[0]=2000
-    print(a,"inside")
-a=[10,20,30]
-display(a)
-print(a,"outside")
+# def display (a):
+#     print(a,"inside")
+#     a[0]=2000
+#     print(a,"inside")
+# a=[10,20,30]
+# display(a)
+# print(a,"outside")
