@@ -670,3 +670,63 @@ my_list = [1, 2, 3, 4, 5, 6]
 
 # Write a regex to validate phone numbers in the format (XXX) XXX-XXXX where X is a digit.
 # Example: Valid phone number: (123) 456-7890.
+# a="My phone number is (123) 456-7890 and office number is (987) 654-3210"
+# import re
+# c=re.findall(r"\(\d{3}\) \d{3}\-\d+",a)
+# print(c)
+
+# Write a regex to find all words of exactly 5 characters in length from a given sentence.
+# Example: For the input "There are many trees in the garden", the output should be ['trees'].
+
+# v="There are many trees in the garden"
+# import re
+# c=re.findall(r"\b\w{5}\b",v)
+# print(c)
+
+# Write a regex to find all repeated words in a sentence.
+# Example: From the text "This is is a test test", the output should be ['is', 'test'].
+
+# text= "This is is a test test"
+# import re
+# v=re.findall(r"\b(\w+)\s+\1\b",text)
+# print(v)
+
+# Write a regex to extract all URLs from a block of text.
+# Example: For the input "Visit our website at https://example.com or follow us at http://twitter.com", 
+# the output should be ['https://example.com', 'http://twitter.com'].
+
+# c="Visit our website at https://example.com or follow us at http://twitter.com"
+# import re
+# v=re.findall(r"\b\w+\:\/\/\w+\.\w+\b",c)
+# print(v)
+
+# Write a regex to check if a password is strong. A strong password is defined as:
+# At least 8 characters long
+# Contains both uppercase and lowercase letters
+# Has at least one digit
+# Has at least one special character (e.g., @, #, $).
+
+# import re
+# v=r"^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$]).{8,}$"
+# d="MyPassword@99"
+# c=re.match(v,d)
+# print(c)
+
+# Write a regular expression to validate IPv4 addresses (e.g., 192.168.1.1).
+# Example: The input "The IPs are 192.168.1.1 and 256.256.256.256" should return ['192.168.1.1'] as valid.
+
+# c="The IPs are 192.168.1.1 and 256.256.256.256"
+# import re
+# v=re.findall(r"\b\d{3}\.\d{3}\.\d{1}\.\d{1}\b",c)
+# print(v)
+
+# Write a regular expression to find all palindrome words (words that read the same backward as forward) in a sentence.
+# Example: From the input "Anna and Bob went to the civic center", the output should be ['Anna', 'Bob', 'civic'].
+
+a="Anna and Bob went to the civic center"
+import re
+v=re.findall(r"\b\w+\b",a)
+print(v)
+for i in v:
+    if i.lower()==i[::-1].lower():
+        print( "palindrome=",i)
