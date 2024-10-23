@@ -212,15 +212,15 @@
 # z=" ".join(a)
 # print(z)
 
-# a="hello"
-# x=a.zfill(20)
-# print(x)
-# a="hello"
-# x=a.zfill(5)
-# print(x)
-# a="hello"
-# x=a.zfill(2)
-# print(x)
+a="hello"
+x=a.zfill(20)
+print(x)
+a="hello"
+x=a.zfill(5)
+print(x)
+a="hello"
+x=a.zfill(2)
+print(x)
 
 # a="hello"
 # x=a.center(20)
@@ -328,16 +328,16 @@
 # a="ammu"
 # print(f"my name is{a}")
 
-# # a="hello\nhai\nhello"
-# # a=a.split()
-# # print(a)
+a="hello\nhai\nhello"
+a=a.split()
+print(a)
 # a=a.splitlines(True)
 # print(a)
 
-# a="hello world"
-# result=a.maketrans("hello","12345")
-# y=a.translate(result)
-# # print(y)
+a="hello world"
+result=a.maketrans("hello","12345")
+y=a.translate(result)
+print(y)
 
 # a={"name":"ammu","age":10,"course":"python"}
 # s={'"NAME":{name},"AGE":{age}'.format_map(a)}
@@ -403,8 +403,8 @@
 # a="\n"
 # print(a.isascii())
 
-# a=65
-# # print(chr(a))
+a=65
+# print(chr(a))
 
 # char = chr(a)
 # print(ord(char))

@@ -832,9 +832,290 @@ my_list = [1, 2, 3, 4, 5, 6]
 
 # Write a function find_max(lst) that takes a list of numbers 
 # and returns the maximum value.
-def maz(n):
-   return max(n)
-print(maz([3,4,5,6]))
+# def maz(n):
+#    return max(n)
+# print(maz([3,4,5,6]))
+
+# Greatest Common Divisor (GCD)
+# Write a recursive function to find the greatest common divisor (GCD) of two numbers.
+
+
+# def gcd(a,b):
+#     if b==0:
+#         return a
+#     else:
+#         return gcd(b,a%b)
+# print(gcd(10,30))
+
+# Write a recursive function to find the sum of all elements in an array.
+# def find(a):
+#     if len(a)==0:
+#         return 0
+#     else:
+#         return a[0]+find(a[1:])
+# print(find([1,3,4,5]))
+
+# Write a recursive function to check if a given array is sorted.
+# def fun(a):
+#     if len(a)<=1:
+#         return True
+#     elif a[0]>a[1]:
+#         return False
+#     else:
+#         return fun(a[1:])
+# print(fun([1,2,3,4,5]))
+
+'''lambda'''
+
+# #find the positive numbers
+# p=[1,-1,2,-2,3,-3]
+# x=list(filter(lambda a:a>0,p))
+# print(x)
+
+#find the strings which are palindrome
+# k=['mom','level','bat','cat']
+# c=list(filter(lambda a:a==a[::-1],k))
+# print(c)
+
+# #convert each string to capital letters
+# t=['hello','python','hai','java']
+# c=list(map(lambda a:a.upper(),t))
+# print(c)
+
+# #calculate length of each string
+# y=['apple','banana','pineapple','mango']
+
+# c=list(map(lambda a:len(a),y))
+# print(c)
+
+
+# find the maximum value
+# e=[3,5,6,8,1]
+# from functools import reduce
+# c=reduce(lambda a,b:max(a,b),e)
+# print(c)
+
+ #concatenate them into a single string
+# h=['hello','python','programming','language']
+# from functools import reduce
+# c=reduce(lambda a,b:a+b,h)
+# print(c)
+
+ #write a lambda fun to add 10 to a given number
+
+# c=lambda a:a+10
+# print(c(10))
+
+# #reverse a string using reversed
+# a="hello"
+# b="".join(reversed(a))
+# print(b)
+
+"""pattern"""
+# Square of stars pattern for n=5:
+# n=5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print("*",end=" ")
+#     print()         
+
+# Right-angle triangle of stars for n=5:
+# n=6
+# for i in range(n):
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     print()
+
+# Inverted right-angle triangle of stars for n=5:
+# n=5
+# for i in range(n):
+#     for j in range(n-i):
+#         print("*",end=" ")
+#     print()
+
+# Right-aligned triangle of stars for n=5:
+# n=5
+# for i in range(n):
+#     for j in range(n-i):
+#         print(" ",end=" ")
+    
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     print()
+
+# Inverted right-aligned triangle of stars for n=5
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print(" ",end=" ")
+#     for j in range(n-i):
+#         print("*",end=" ")
+#     print()
+# Repeating 5 pattern for n=5:
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print("5",end=" ")
+#     print()
+
+
+# Repeating row number pattern for n=5:
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+# 5 5 5 5 5
+
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print(i+1,end=" ")
+#     print()
+
+
+# Increasing sequence of numbers pattern for n=6:
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+# 1 2 3 4 5 6
+
+# n=6
+# for i in range(n):
+#     for j in range(i+1):
+#         print(j+1,end=" ")
+#     print()
+
+# Alternating rows of 1 and 2 for n=5:
+
+# 1
+# 2 2
+# 1 1 1
+# 2 2 2 2
+# 1 1 1 1 1
+
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         if i%2==0:
+#             print("1",end=" ")
+#         else:
+#             print("2",end=' ')
+#     print()
+
+# Continuous sequence pattern for n=5:
+
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+# 11 12 13 14 15
+# p=1
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print(p,end=" ")
+#         p+=1
+#     print()
+
+# Cross pattern with center row and column filled for n=5:
+
+#   *    
+# * * *
+# * * * * *
+# * * *
+#   *
+
+# n=5
+# for i in range(n-1):
+#     for j in range(n-i):
+#         print(" ",end=" ")
+
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     for j in range(i):
+#         print("*",end=" ")
+#     print()
+# for i in range(n):
+#     for j in range(i+1):
+#         print(" ",end=" ")
+#     for j in range(n-i):
+#         print("*",end=" ")
+#     for j in range(n-i-1):
+#         print("*",end=" ")
+#     print()
+ 
+
+# n=5
+# for i in range(n):
+#     for j in range(n):
+#         if i==j or i+j==n-1:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+
+
+# n=5
+# for i in range(n):
+#     for j in range(n):
+#         if i==n//2 or j==n//2:
+#             print("*",end=" ") 
+#         else:
+#             print(" ",end=" ")
+
+
+# k = 4  
+# n = 5  
+# for i in range(n):
+#     p=k
+#     for j in range(i+1):
+#         print(" ", end=" ")
+#     for j in range(n - i):
+#         print(p, end=" ")
+#         p -= 1  
+#     k-=1
+#     print() 
+
+# define a class student that inherits from the person class . add an additional attribute 
+#  student_id and a method to print students details , including the student ID
+
+class Person :
+    def details(self,name,age):
+        self.name=name
+        self.age=age
+class Student(Person):
+    def details (self,name,age,id):
+        self.id=id
+        super().details(name,age)
+    def print(self):
+        print(f"name={self.name},age={self.age},id={self.id}")
+a=Student()
+a.details("anu",20,1)
+a.print()
+
+
+class Person :
+    def details(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print(f"name={self.name},age={self.age}")
+class Student(Person):
+    def details (self,name,age,id):
+        self.id=id
+        super().details(name,age)
+    def print(self):
+        print(f"id={self.id}")
+        super().display()
+a=Student()
+a.details("anu",20,1)
+a.display()
+
+
 
 
 

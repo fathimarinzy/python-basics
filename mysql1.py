@@ -27,23 +27,23 @@ cursor1=data.cursor()
 # data.commit()
 # print("values inserted")
 
-"""to show table"""
-cursor1.execute('select * from table11')
-print("show table")
-x=cursor1.fetchall()
-print(x)
+# # """to show table"""
+# cursor1.execute('select * from table11')
+# print("show table")
+# x=cursor1.fetchall()
+# print(x)
 
-# for i in x:
+# # for i in x:
 #     print(i)
 
 # x=cursor1.fetchone()
 # print(x)
 
-"""update"""
+# """update"""
 # cursor1.execute('update table11 set name="anu" where id=1')
 # data.commit()
 # print("updated")
-"""delete"""
+# """delete"""
 # cursor1.execute('delete from table11  where id=1')
 # data.commit()
 # print("deleted")

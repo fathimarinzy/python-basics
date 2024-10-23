@@ -1,15 +1,3 @@
-# import os
-# # os.remove("abc.txt")
-# os.rmdir("txxxtis")
-
-# #to delete folder with files
-# import shutil
-# shutil.rmtree("hello")
-# with open("abc.txt","w") as file:
-#     x=file.write("worked")
-#     print(x)
-# file.close()
-
 
 # import math
 # print(math.factorial(5))

@@ -223,48 +223,48 @@
 # p.average()
 
 # # #inheritance
-# ##single inheritance
-# # class Father:
-# #     def phone(self):
-# #         print("phone is using")
-# #     def walk(self):
-# #         print("walking")
-# # class Son(Father):
+# # ##single inheritance
+# class Father:
+#     def phone(self):
+#         print("phone is using")
+#     def walk(self):
+#         print("walking")
+# class Son(Father):
   
-# #         print("studying")
-# # f=Son()
-# # f.phone()
+#         print("studying")
+# f=Son()
+# f.phone()
 # # f.walk()
 
-# # class Father:
-# #     def phone(self):
-# #         print("phone is using")
-# #     def walk(self):
-# #         print("walking")
-# # class Son(Father):
-# #     def study(self):
-# #         print("studying")
-# # f=Son()
-# # f.phone()
-# # f.walk()
-# # f.study()
+# class Father:
+#     def phone(self):
+#         print("phone is using")
+#     def walk(self):
+#         print("walking")
+# class Son(Father):
+#     def study(self):
+#         print("studying")
+# f=Son()
+# f.phone()
+# f.walk()
+# f.study()
 
-# # #inheritance with constructor
-# # class Father:
-# #     def __init__(self):
-# #         print("father page")
-# #     def phone(self):
-# #         print("phone is using")
-# #     def walk(self):
-# #         print("walking")
-# # class Son(Father):
-# #     def __init__(self):
-# #         print("son page")
-# #     def study(self):
-# #         print("studying")
-# # f=Son()
-# # f.phone()
-# # f.walk()
+# # # #inheritance with constructor
+# class Father:
+#     def __init__(self):
+#         print("father page")
+#     def phone(self):
+#         print("phone is using")
+#     def walk(self):
+#         print("walking")
+# class Son(Father):
+#     def __init__(self):
+#         print("son page")
+#     def study(self):
+#         print("studying")
+# f=Son()
+# f.phone()
+# f.walk()
 # # f.study()
 # # #super method
 # class Father:
@@ -288,6 +288,7 @@
 
 
 # #multilevel inheritance
+
 # class Grandfather :
 #     def phone(self):
 #         print("phone is using")
@@ -343,9 +344,9 @@
 # f=Car()
 # f.four()
 # f.acceleration()
-# # f.two() #car has no method two .car and bike has no relation
+# f.two() #car has no method two .car and bike has no relation
 # ff=Bike()
-# # ff.four() #bike has no method four .car and bike has no relation
+# ff.four() #bike has no method four .car and bike has no relation
 # ff.acceleration()
 # ff.two()
 
@@ -369,9 +370,9 @@
 # obj.phone()
 # print(Grandson.__mro__)
 
-# # constructor in multilevel
+# # # constructor in multilevel
 # class Grandfather:
-#     def __init__(self,g):
+#     def __init__(self):
 #         print("grandfather page")
 #     def phone(self):
 #         print("phone is using")
@@ -497,7 +498,7 @@
 # s>=ss
 
 # # overriding
-# #method overriding
+# # #method overriding
 # class Father:
 #     def phone(self):
 #         print("father can only call")
@@ -509,7 +510,7 @@
 # s.phone()
 
 # #constructor overriding
-# class father:
+# class Father:
 #     def __init__(self):
 #         print("father")
 # class Son(Father):
@@ -531,7 +532,7 @@
 #         print("father can only call")
 # s=Father()
 
-# ##protected
+# # ##protected
 # class Father:
 #     _name="abc"
 #     def __init__(self):
@@ -615,8 +616,8 @@
 #       helllo""")
 
 
-# #decorators
-# #instance method
+# # #decorators
+# # #instance method
 # class Student:
 #     class_variable=0
 #     def __init__(self,name):
@@ -632,7 +633,7 @@
 # print(s.name)
 # print(Student.class_variable,"pppppp")
 
-# #class method
+# # #class method
 # class Student:
 #     class_variable=0
 #     def __init__(self,name):
@@ -650,22 +651,22 @@
 
 
 # #static method
-# class Student:
-#     class_variable=0
-#     def __init__(self,name):
-#         self.name=name
-#     @staticmethod
-#     def modify(a,b):
-#         print(a+b)
-# s=Student("ammu")
-# print(s.name)
-# print(Student.class_variable)
-# Student.modify(10,20)
-# print(s.name)
+class Student:
+    class_variable=0
+    def __init__(self,name):
+        self.name=name
+    @staticmethod
+    def modify(a,b):
+        print(a+b)
+s=Student("ammu")
+print(s.name)
+print(Student.class_variable)
+Student.modify(10,20)
+print(s.name)
 # print(Student.class_variable,"pppppp")
 
 
-# ##destructor
+# # ##destructor
 # class Student:
 #     def __init__(self):
 #         print("constructor")
@@ -675,7 +676,7 @@
 #         print("working")
 # s=Student()
 # del s
-# #without del s
+# # #without del s
 # class Student:
 #     def __init__(self):
 #         print("constructor")

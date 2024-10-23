@@ -161,6 +161,7 @@
 # display(a=10,b=20,c=30)
 
 # # recursion
+
 # def display(n):
 #     if n==0:
 #         return n
@@ -221,7 +222,13 @@
 # for i in range(0,11):
 #   print(fibno(i))
 
-
+#Write a function find_max(lst) that takes a list of numbers and returns the maximum value. 
+# def find(a):
+#     if len(a)==1:
+#         return a[0]
+#     b=find(a[1:])
+#     return a[0] if a[0]>b else b
+# print(find([1,3,4,5]))
 
 # #lambda 
  
@@ -241,9 +248,11 @@
 # p=[1,2,3,4,5,6,7,8,9,10]
 # x=list(map(lambda a:a**2,p))
 # print(x)
+
+
+
 # #reduce
 # from functools import reduce
-
 # p=[1,2,3,4,5,6,7,8,9,10]
 # x=reduce(lambda a,b:a+b,p)
 # print(x)
@@ -331,7 +340,7 @@
 #     def in_fun():
 #         return "inner fun"
 #     return in_fun()
-# print(out_fun)
+# print(out_fun())
 
 
 #methods common
@@ -339,8 +348,8 @@
 # l=[10,12,81,54,60]
 # print(sorted(l))
 
-# l=[10,12,81,54,60]
-# print(sorted(l,reverse=True))
+# # l=[10,12,81,54,60]
+# # print(sorted(l,reverse=True))
 
 # l=['abc','python','apple','bat','java']
 # print(sorted(l,key=len))
@@ -376,7 +385,7 @@
 # display(a)
 # print(a,"outside")
 
-# """pass by reference"""
+# """pass by reference""" 
 
 # def display (a):
 #     print(a,"inside")

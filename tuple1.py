@@ -99,17 +99,17 @@ z=("hai",4,5,"hello",True,4,5)
 
 
 # #packing and unpacking
-# course=("python","java","php","dotnet")
-# # (a,b,c,d)=course
-# # print(a)
-# # print(b)
-# # print(c)
-# # print(d)
-
-
-# (a,b,*c)=course
+course=("python","java","php","dotnet")
+# (a,b,c,d)=course
 # print(a)
 # print(b)
 # print(c)
+# print(d)
+
+
+(a,b,*c)=course
+print(a)
+print(b)
+print(c)
 
 

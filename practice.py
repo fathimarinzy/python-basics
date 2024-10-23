@@ -166,7 +166,7 @@
 #             print(" ",end="  ")
 #     print()   
 
-# n=5
+n=5
 # for i in range(n):
 #     for j in range(i+1):
 #         if i==n-1 or j==0 or i==j:
@@ -513,19 +513,19 @@
 #     print()
 
 
-# n=5
-# k=69
-# for i in range(n):
-#     p=k
-#     for j in range(i+1):
-#         print(" ",end=" ")
-#     for j in range(n-i):
+n=5
+k=69
+for i in range(n):
+    p=k
+    for j in range(i+1):
+        print(" ",end=" ")
+    for j in range(n-i):
       
-#         print(chr(p),end=" ")
+        print(chr(p),end=" ")
 
-#         p-=1
-#     k-=1
-#     print()
+        p-=1
+    k-=1
+    print()
 
 
 # n=5

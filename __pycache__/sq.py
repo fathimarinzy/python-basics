@@ -1,8 +1,8 @@
-import sqlite3
-mydb=sqlite3.connect('abcd.db')
-print("database created ")
+# import sqlite3
+# mydb=sqlite3.connect('abcd.db')
+# print("database created ")
 
-cursor1=mydb.cursor()
+# cursor1=mydb.cursor()
 # cursor1.execute('create table sept(id int primary key not null,name text not null,age int not null,address char(50),salary real)')
 # print("table created")
 
