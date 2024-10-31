@@ -79,3 +79,21 @@ p{
 }    */
 
 /* border */
+/* p{
+    background-color: rgb(50, 151, 168); 
+    border-width:5px;
+    border-style:solid;
+} */
+/* p{
+    background-color: rgb(50, 151, 168); 
+    border:5px red solid;
+    border:5px red dotted;
+    border:5px red dashed;
+    border:5px red double;
+    border:5px yellow groove;
+    border:5px yellow ridge;
+    border:5px yellow inset;
+    border:5px yellow outset;
+
+} */
+
