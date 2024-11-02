@@ -1,0 +1,93 @@
+
+/* descent selector */
+/* div p{
+
+    background-color: brown;
+} */
+
+/* child selector  */
+/* div>p{
+
+    background-color: rgb(54, 42, 165);
+} */
+
+/* adjacent sibling */
+/* div+p{
+
+    background-color:green;
+}   */
+
+/* general sibling */
+
+/* div~p{
+    background-color: aquamarine;
+} */
+ 
+
+/* pseudoclasses  */
+
+/* unvisited link */
+a:link{color:blue}
+
+/* visited link */
+a:visited{color:brown}
+
+/* mouse over link */
+a:hover {color:aqua}
+
+/* selected link */
+a:active {color:rgb(43, 226, 58)}
+
+/* pseudoelements */
+
+/* p::first-letter {
+    color:red;
+}
+p::first-line {
+    color:rgb(76, 0, 255);
+}
+p::before {
+    content:"hello";
+    content:url('download\ .jpg');
+}
+p::after{
+    content:"hai";
+    content:url('download .jpg') ;
+} */
+
+
+/* position properties */
+/* #div{
+    position:static;
+    position: relative;
+    position:fixed;
+    left:100px;
+} */
+/* #div{
+    position: sticky;
+    top:0px;
+} */
+
+body{
+    background-color: aqua;
+    background-image: url('download\ .jpg');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-position: fixed;
+    background-position: center center; */
+    /* background-position: center top;
+    background-position: center bottom;
+    background-position: right top;
+    background-position: right bottom;
+    background-position: right center;
+    background-position: left center;
+    background-position: left top;
+    background-position: left bottom; */
+    background-size: contain;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-attachment:scroll;
+
+
+}
