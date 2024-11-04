@@ -1119,3 +1119,16 @@ a.display()
 
 
 
+
+
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+        a=list(zip(l1,l2))
+        b=[]
+        for i,j in a:
+            b.append(i+j)
+        print(b)
+       
+s=Solution()
+s.addTwoNumbers([2,4,3],[5,6,4])
+

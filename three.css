@@ -1,0 +1,23 @@
+table{
+    width:100%;
+    border-collapse: collapse;
+    border-collapse: separate;
+    
+}
+
+table,th,td{
+    border:2px red solid;
+
+}
+tr:hover{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: aquamarine;
+}
+
+tr:nth-child(even){
+    background-color: rgb(110, 194, 15);
+}

@@ -69,8 +69,8 @@ p::after{
 } */
 
 body{
-    background-color: aqua;
-    background-image: url('download\ .jpg');
+    /* background-color: aqua; */
+    /* background-image: url('download\ .jpg'); */
     /* background-repeat: no-repeat; */
     /* background-repeat: repeat-x;
     background-repeat: repeat-y;
@@ -84,10 +84,41 @@ body{
     background-position: left center;
     background-position: left top;
     background-position: left bottom; */
-    background-size: contain;
+    /* background-size: contain; */
     background-size: cover;
     /* background-attachment: fixed; */
     background-attachment:scroll;
 
 
+}
+
+/* p{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+} */
+
+p{
+    text-align: center;
+    text-align: right;
+    text-align: left;
+    text-align: justify;
+    text-shadow: 2px 2px red;
+    text-shadow: 50px 50px 5px red;
+
+
+}
+/* a{text-decoration:none;} */
+/* ul{list-style: none;} */
+/* li{display: inline;} */
+
+ul{
+    list-style: none;
+    background-color: black;
+    text-align: center;
+    color: aqua;
+}
+li{
+    display: inline;
+    padding: 20px;
 }
