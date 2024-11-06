@@ -1117,10 +1117,6 @@ a.display()
 
 
 
-
-
-
-
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         a=list(zip(l1,l2))
@@ -1132,3 +1128,6 @@ class Solution(object):
 s=Solution()
 s.addTwoNumbers([2,4,3],[5,6,4])
 
+
+
+n=int(input("enter the number:"))
