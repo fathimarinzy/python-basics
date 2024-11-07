@@ -158,17 +158,109 @@
 // }
 
 // to check the day
-function week(){
-    var d=document.getElementById("1").value
-    if (d=="sunday" && "Monday"){
-        window.alert("week end")
-    }
-    else if(d=="Tuesday"||"Wednesday"||"Thursday"||"Friday"){
-        window.alert("week day")
-    }
-    else{
-        window.alert("invalid")
-    }
+// function week(){
+//     var d=document.getElementById("1").value.toLowerCase();
+//     if (d=="sunday" || d=="monday"){
+//         window.alert("week end")
+//     }
+//     else if(d=="tuesday"||d=="wednesday"||d=="thursday"||d=="friday"){
+//         window.alert("week day")
+//     }
+//     else{
+//         window.alert("invalid")
+//     }
+// }
+
+// ======================================================
+// switch
+
+// var fruits="Apple"
+// switch(fruits){
+//     case "Banana":
+//         text="Banana is good";
+//         console.log(text);
+//         break;
+//     case "Orange":
+//         text="Orange is good";
+//     case "Apple":
+//         text="Apple is Awesome";
+//         console.log(text);
+//         break;
+//     default :
+//         text="I have never heard of that fruit...";
+//         console.log(text);
+// }
+// eg
+// ope="+"
+// var a=10;
+// var b=20;
+// switch(ope){
+//     case "+":
+//         res=a+b
+//         document.write(res)
+//         break;
+//     case "-":
+//         res=a-b
+//         document.write(res)
+//         break;
+//     case "*":
+//         res=a*b
+//         document.write(res)
+//         break;
+//     case "\\":
+//         res=a+b
+//         document.write(res)
+//         break;
+//     default:
+//         document.write("invalid")   
+
+// }
+
+// ====================================
+// while and do while
+// var i=0;
+// while(i<5){
+//     console.log(i);
+//     i++
+// }
+
+// var i=0;
+// do{
+//     console.log(i);
+//     i++
+// }while(i<5)
 
 
+// var i=0;
+// while(i>5){
+//     console.log(i);
+//     i++
+// }
+
+
+// var i=0;
+// do{
+//     console.log(i);
+//     i++
+// }while(i>5)
+
+
+// factorial of a number
+// var i=5;
+// var fact=1;
+// while(i>0){
+//     fact*=i;
+//     i--
+// }
+// // document.write(fact);
+// console.log(fact);
+
+// sum of first 10 numbers
+
+var i=1;
+var sum=0;
+while(i<=10){
+    sum+=i;
+    i++
 }
+console.log(sum);
