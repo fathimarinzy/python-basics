@@ -1130,4 +1130,52 @@ s.addTwoNumbers([2,4,3],[5,6,4])
 
 
 
-n=int(input("enter the number:"))
+# 1.write a function to find strings in a given list,starting with given prefix,no inbuilt function
+# input prefix:ca
+# [car,cat,fear,centre]
+# output:[cat,car]
+
+
+a=['car','cat','fear','centre']
+b=[]
+for i in a:
+    if i[0]=="c" and i[1]=="a":
+        b=b+[i]       
+print(b)
+
+
+# 2.a="have a nice day"
+# output d="day nice a have"
+
+a="have a nice day"
+d=a.split( )
+print(d)
+e=d[::-1]
+print(e)
+f=" ".join(e)
+print(f)
+
+
+# 3.s="malayalam"
+# count each charac in string
+
+s="malayalam"
+d={}
+for i in s:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+print(d)
+
+
+# 4.
+n=5
+for i in range(n):
+    for j in range(n):
+        if i==j or i+j==n-1:
+            print(i+1,end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+        
