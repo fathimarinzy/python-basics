@@ -1188,3 +1188,10 @@ for i in l:
     if i>m:
         m=i
 print(m)
+
+
+# given an array for random num given a task is to push all zeros to th given array to the end of the array
+# first line contains an int value n denoting size of array next line contains elements of the array constarinsts
+# 1<n<=50,1<=arr[i]<=100
+# 5 1 0 0 3 0 out=1 3 0 0
+
