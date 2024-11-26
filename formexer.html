@@ -3,13 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Survey Form</title>
+    <link rel="stylesheet" href="formexerc.css">
 </head>
 <body>
+  
     <h3>SURVEY FORM</h3>
+    
+   <div class="container">
+    <p>Let us know how we can improve</p>
     <form action="https://en.wikipedia.org/wiki/Flower" method="post">
+        
+      
         <label for="">Name:</label>
         <input type="text" name="" id="" placeholder="Enter your name"  required><br><br>
-     
+       
         <label for="">Email:</label>
         <input type="email" name="" id=""  placeholder="Enter your Email" required><br><br>
 
@@ -25,10 +32,11 @@
             <option value="" >Employee</option>
         </select><br><br>
         <label for="">How likely is that you would recommend this program to a friend? </label>
+        <div>
         <input type="radio" name="suggestion" id="" >Definitely<br><br>
         <input type="radio" name="suggestion" id="" >Maybe<br><br>
         <input type="radio" name="suggestion" id="" >Not sure<br><br>
-        
+        </div>
         <label for="">What do you like most here: </label>
         <select name="" id="">
             <option value="" >Student</option>
@@ -38,15 +46,18 @@
 
         <label for="">Things that should be improved in the future<br>
         (Check all that apply):  </label>
+        <div>
         <input type="checkbox" name="suggestion" id="" >Front-end Projects<br><br>
         <input type="checkbox" name="suggestion" id="" >Back-end Projects<br><br>
         <input type="checkbox" name="suggestion" id="" >Data Visualization<br><br>
-        
+        </div>
 
         <label for="">Any Comments or Suggestions? </label>
         <textarea name="" id="" rows ="4" cols="25" placeholder="Enter your comment here..."  ></textarea><br><br>
     
-        <input type="submit" value="submit">
+        <button type="submit">Submit</button>
     </form>
+
+</div>
 </body>
 <html

@@ -1,0 +1,22 @@
+body{
+    background-image: url("pink\ sky.jpeg");
+   
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+button{
+    background-color: blue;
+}
+.container{
+    background: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+   
+    text-align: center;
+
+}

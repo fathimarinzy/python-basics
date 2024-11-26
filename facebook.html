@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login and Signup</title>
+    <link rel="stylesheet" href="facebk.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">facebook</div>
+        <div class="login-form">
+            <form>
+                <label for="email">Email or Phone</label>
+                <input type="text" id="email" placeholder="Email or Phone">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Log In</button>
+                <div>
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="left-section">
+            <h1>Facebook helps you connect and share with the people in your life.</h1>
+            <img src="network.png" alt="Network" class="network-image">
+        </div>
+        <div class="right-section">
+            <div class="signup-box">
+                <h2>Sign Up</h2>
+                <p>It’s free and always will be.</p>
+                <form>
+                    <div class="name-fields">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email" placeholder="Your Email">
+                    <input type="email" placeholder="Re-enter Email">
+                    <input type="password" placeholder="New Password">
+                    <label for="birthday">Birthday:</label>
+                    <div class="birthday-select">
+                        <select>
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <!-- Add other months -->
+                        </select>
+                        <select>
+                            <option>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <!-- Add other days -->
+                        </select>
+                        <select>
+                            <option>Year</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <!-- Add other years -->
+                        </select>
+                    </div>
+                    
+                    <div class="gender">
+                        <input type="radio" name="suggestion" id="" >Definitely<br><br>
+                        <input type="radio" name="suggestion" id="" >Maybe<br><br>
+                    </div>
+                    <p>
+                        By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.
+                    </p>
+                    <button type="submit" class="signup-button">Sign Up</button>
+                </form>
+                <a href="#" class="create-page">Create a Page for a celebrity, band, or business.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
