@@ -411,3 +411,63 @@ a=65
 # text="string"
 # a=text.encode("ascii")
 # print(a)  
+
+# Function to remove duplicates from a list of strings
+def remove_duplicates(strings):
+    # Convert the list to a set to remove duplicates, then back to a list
+    return list(set(strings))
+
+# Sample data
+strings_list = ["apple", "banana", "apple", "orange", "banana", "grape"]
+
+# Remove duplicates and print the result
+unique_strings = remove_duplicates(strings_list)
+print(unique_strings)
+
+
+# Sample dictionaries
+d1 = {'a': 100, 'b': 200, 'c': 300}
+d2 = {'a': 300, 'b': 200, 'd': 400}
+
+# Create an empty dictionary to store the result
+result = {}
+
+# Add values from the first dictionary to the result
+for key, value in d1.items():
+    result[key] = value
+
+# Add values from the second dictionary to the result
+for key, value in d2.items():
+    if key in result:
+        result[key] += value  # If the key exists, add the value
+    else:
+        result[key] = value  # If the key doesn't exist, add the key-value pair
+
+# Print the resulting dictionary
+print(result)
+
+
+# Create a list of tuples, where each tuple contains three numbers.
+l = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+# Use a list comprehension to iterate through each tuple 't' in the list 'l'.
+# For each tuple, create a new tuple by removing the last element and adding the number 100.
+# The result is a list of modified tuples.
+print([t[:-1] + (100,) for t in l])
+
+
+s = "aaabbbccddd"
+compressed = ""
+count = 1
+
+for i in range(1, len(s)):
+    if s[i] == s[i - 1]:
+        count += 1
+    else:
+        compressed += str(count) + s[i - 1]
+        count = 1
+
+# Add the last group
+compressed += str(count) + s[-1]
+
+print(compressed)  # Output: 3a3b2c3d

@@ -1,16 +1,16 @@
 // to get date
-// function display(){
-//     var d=new Date();
-//     // document.getElementById("kkk").innerHTML=d;
-//     // document.getElementById("kkk").innerHTML=d.getDate();
-//     // document.getElementById("kkk").innerHTML=d.getMonth();
-//     // document.getElementById("kkk").innerHTML=d.getDay();
-//     // document.getElementById("kkk").innerHTML=d.getHours();
-//     // document.getElementById("kkk").innerHTML=d.getMinutes();
-//     // document.getElementById("kkk").innerHTML=d.getSeconds();
-//     // document.getElementById("kkk").innerHTML=d.getFullYear();
+function display(){
+    var d=new Date();
+    document.getElementById("kkk").innerHTML=d;
+    document.getElementById("kkk").innerHTML=d.getDate();
+    document.getElementById("kkk").innerHTML=d.getMonth();
+    document.getElementById("kkk").innerHTML=d.getDay();
+    document.getElementById("kkk").innerHTML=d.getHours();
+    document.getElementById("kkk").innerHTML=d.getMinutes();
+    document.getElementById("kkk").innerHTML=d.getSeconds();
+    document.getElementById("kkk").innerHTML=d.getFullYear();
 
-// }
+}
 
 // to set date
 // function display(){

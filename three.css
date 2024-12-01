@@ -55,12 +55,12 @@ tr:nth-child(even){
     background-color: hsla(0,50%,50%,1);
 }
 
-/* img{
-    float: right;
-    float: left;
+img{
+    /* float: right;
+    float: left; */
     float: center;
 
-} */
+}
 
 #d1{
     float: left;

@@ -21,8 +21,8 @@
 
 /* div~p{
     background-color: aquamarine;
-} */
- 
+}
+  */
 
 /* pseudoclasses  */
 
@@ -42,27 +42,28 @@ a:active {color:rgb(43, 226, 58)}
 
 /* p::first-letter {
     color:red;
-}
-p::first-line {
+} */
+/* p::first-line {
     color:rgb(76, 0, 255);
-}
-p::before {
+} */
+/* p::before {
     content:"hello";
     content:url('download\ .jpg');
-}
-p::after{
+} */
+/* p::after{
     content:"hai";
     content:url('download .jpg') ;
 } */
 
 
 /* position properties */
-/* #div{
-    position:static;
-    position: relative;
+  #div{
+    /* position:static; */
+    /* position: relative; */
     position:fixed;
     left:100px;
-} */
+} 
+
 /* #div{
     position: sticky;
     top:0px;
@@ -76,16 +77,16 @@ body{
     background-repeat: repeat-y;
     background-position: fixed;
     background-position: center center; */
-    /* background-position: center top;
-    background-position: center bottom;
-    background-position: right top;
-    background-position: right bottom;
+    /* background-position: center top; */
+    /* background-position: center bottom; */
+    /* background-position: right top; */
+    /* background-position: right bottom;
     background-position: right center;
     background-position: left center;
     background-position: left top;
-    background-position: left bottom; */
-    /* background-size: contain; */
-    background-size: cover;
+    background-position: left bottom;
+    background-size: contain; */
+    /* background-size: cover; */
     /* background-attachment: fixed; */
     background-attachment:scroll;
 

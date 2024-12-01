@@ -1,8 +1,8 @@
-// function display(y){
-//     var d=document.getElementById("input1").value
-//     window.alert(d)
-//     window.alert(y)
-// }
+function display(y){
+    var d=document.getElementById("input1").value
+    window.alert(d)
+    window.alert(y)
+}
 
 // ===============================================
 // javascript operators======
@@ -63,25 +63,25 @@
 
 // ===================================================
 // comparison operators
-// var a=25;
-// var b=25;
-// document.write(a==b )
-// document.write("<br>")
+var a=25;
+var b=25;
+document.write(a==b )
+document.write("<br>")
 
-// var a=25;
-// var b="25";
-// document.write(a==b)
-// document.write("<br>")
+var a=25;
+var b="25";
+document.write(a==b)
+document.write("<br>")
 
-// var a=25;
-// var b=25;
-// document.write(a===b )
-// document.write("<br>")
+var a=25;
+var b=25;
+document.write(a===b )
+document.write("<br>")
 
-// var a=25;
-// var b="25";
-// document.write(a===b)
-// document.write("<br>")
+var a=25;
+var b="25";
+document.write(a===b)
+document.write("<br>")
 
 
 // =============================================

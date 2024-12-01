@@ -1,4 +1,4 @@
-window.alert("welcome");
+// window.alert("welcome");
 
 document.write("welcome");
 document.write("<i>welcome</i>");
@@ -8,17 +8,17 @@ document.write("<i>welcome</i>");
 // document.getElementById("h").innerHTML="changed";
 // =====================================================
 
-// function display(){
-//     document.getElementById("h").innerHTML="changed";
-// }
+function display(){
+    document.getElementById("h").innerHTML="changed";
+}
 
-// function display1(){
-//     document.getElementById("h").innerHTML="changed";
-// }
+function display1(){
+    document.getElementById("h").innerHTML="changed";
+}
 
-// function display2(){
-//     document.getElementById("h").innerHTML="changed";
-// }
+function display2(){
+    document.getElementById("h").innerHTML="changed";
+}
 
 // =======================================================
 // var,let,const
@@ -61,23 +61,23 @@ document.write("<i>welcome</i>");
 // document.write(c);
 // document.write("<br>");
 
-let d;
-d=500;
-document.write(d);
-document.write("<br>");
+// let d;
+// d=500;
+// document.write(d);
+// document.write("<br>");
 
 
-t=100;
-let t;
-document.write(t);
-document.write("<br>");
+// t=100;
+// let t;
+// document.write(t);
+// document.write("<br>");
 
 // ===============================
 // const
 // only this is possible
-// const r=10000;
-// document.write(r);
-// document.write("<br>");
+const r=10000;
+document.write(r);
+document.write("<br>");
 
 // not possible
 // const r=10000;
