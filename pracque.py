@@ -1196,4 +1196,237 @@ print(m)
 # 5 1 0 0 3 0 out=1 3 0 0
 
 
+# n=13
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print(i,end=" ")
+#         i+=n-j-1
+#     print()
+
+
+# # a="NOON"
+# # b="OLONSEIGH"
+# a="CAT"
+# b="CATIDUX"
+# for i in a:
+#     if a.count(i)>b.count(i):
+#         print("ABSENT")
+#         break
+# else:
+#     print("PRESENT")
+
+# n=10
+# for i in range(n//2,n,2):
+#     for j  in range(1,n-i,2):
+#         print(" ",end=" ")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     for j in range(1,n-i+1):
+#         print(" ",end=" ")
+#     for j in range(1,i+1):
+#         print("*",end=" ")       
+#     print()
+# for i in range(n,0,-1):
+#     for j in range(i,n):
+#         print(" ",end=" ")
+#     for j in range(1,i*2):
+#         print("*",end=" ")
+#     print()
+
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(i-1):
+#         print(" ",end=" ")
+#     print(i,end=" ")
+#     for j in range((n-i)*2-1):
+#         print(" ",end=" ")
+#     if i!=n:
+#         print(i)
+#     else:
+#         print()
+# for i in range(n-1,0,-1):
+#     for j in range(i-1):
+#         print(" ",end=" ")
+#     print(i,end=" ")
+#     for j in range((n-i)*2-1):
+#         print(" ",end=" ")
+
+#     print(i)
+    
+
+# n=10
+# for i in range(1,n+1):
+#     for j in range(1,n-i+1):
+#         print("*",end=" ")
+#     for k in range(1,2*i):
+#         if k==1 or k==2*i-1:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     for j in range(1,n-i+1):
+#         print("*",end=" ")
+
+#     print()
+# for i in range(n,0,-1):
+  
+#     for j in range(1,n-i+1):
+#         print("*",end=" ")
+#     for k in range(1,2*i):
+#         if k==1 or k==2*i-1:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     for j in range(1,n-i+1):
+#         print("*",end=" ")
+
+#     print()
+
+
+
+# total=0
+# count=0
+# while True:
+#     n=int(input("Enter the number:"))
+#     if n==0:
+#         break
+#     total=total+n
+#     count=count+1
+# if count>0:
+#     average=total/count
+#     print("average of the entered numbers:",average)
+# else:
+#     print("No numbers to calculate the average")
+
+# result=""
+# n=input("Enter the string:")
+# for i in n:
+#     duplicate=False
+#     for j in result:
+#         if i==j:
+#             duplicate=True
+#             break
+#     if not duplicate:
+#         result+=i
+# print("string after removing duplicates:",result)
+
+# N=int(input("Enter the number: "))
+# k=int(input("Enter the repetition count: "))
+# print(f"enter {N} elements:")
+# a=[0]*N
+# for i in range(N):
+#     a[i]=int(input())
+
+# for i in range(N):
+#     current_num=a[i]
+#     count=0
+#     for j in range(N):
+#         if a[j]==current_num:
+#             count+=1
+#     if count==k:
+#         print("first number to repeat exactly k times:",current_num)
+#         break
+# else:
+#     print("No number exists")
+#     print("-1")
+
+
+# n=int(input("Enter the numbers: "))
+# print(f"enter {n} elements:")
+# a=[0]*n
+# for i in range(n):
+#     a[i]=input()
+# print("operands are:")
+# for element in a:
+#   if element.isdigit() or (element.startswith('-') and element[1:].isdigit()):
+#         print(element)
+
+
+input_string = input("Enter the sentence: ")
+words = []
+current_word = ""
+for char in input_string:
+    if char == ' ':
+        words = words + [current_word]  
+        current_word = ""
+    else:
+        current_word += char
+words = words + [current_word]
+
+
+list_length = 0
+for i in words:
+    list_length += 1
+
+reversed_string = ""
+for i in range(list_length - 1, -1, -1):  
+    reversed_string += words[i]
+    if i > 0:  
+        reversed_string += ' '
+print("Reversed sentence:", reversed_string)
+
+
+
+# def findstring(prefix,words):
+#     result=[]
+#     prefix_co=0
+#     for i in prefix:
+#         prefix_co+=1
+
+#     for word in words:
+#         word_co=0
+#         for i in words:
+#             word_co+=1
+        
+#         match=True
+#         if prefix_co>word_co:
+#             match=False
+#         else:
+#             for i in range(prefix_co):
+#                 if prefix[i]!=word[i]:
+#                     match=False
+#                     break
+#         if match:
+#             result+=[word]
+#     return result
+        
+# prefix = input("Enter prefix: ")
+# words = ["cat", "car", "fear", "center"]        
+# out=findstring(prefix,words)
+# print("words startin with prefix:",out)
+
+
+# input="programming"
+# unique=[]
+# for i in input:
+#     is_unique=True
+#     for u in unique:
+#         if i==u:
+#             is_unique=False
+#             break
+#     if is_unique:
+#         unique+=[i]
+# print("unique characters:")
+# for i in unique:
+#     print(i,end=" ")
+
+
+sentence=input("enter the sentence:")
+clean_sentence=""
+for i in sentence:
+    if ('a'<=i<='z') or ('A'<=i<+'Z') or i==" ":
+        clean_sentence+=i
+word=""
+for i in clean_sentence:
+    if i== " ":
+        if word:
+           print (word)
+           word=""
+    else:
+        word+=i
+
+if word:
+    print(word)
+
+
 
