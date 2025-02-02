@@ -1261,27 +1261,126 @@ n=5
 
 # 21.write a program to keep adding numbers input by the user until the total sum exceeds 50.
 # # # print the sum
-sum=0
-while sum<=50:
-    n=int(input("enter the num="))
-    sum+=n
 
 
+# total_sum = 0
+# while total_sum <= 50:
+#     number=float(input("Enter a number: "))  
+#     total_sum += number 
 
+# print("The total sum is:", total_sum)
 
 
 # # #22.find the power of a number using a while loop
+# base=int(input("enter the base:"))
+# exponent=int(input("enter the exponent:"))
+
+# result=1
+# c=exponent
+# while c>0:
+#     result *= base
+#     c -= 1
+# print(f"{base}^{exponent}={result}")
+
+
 # # #23.print numbers divisible by 3 and 5 within the range 1 to 50
+
+# i=1
+# while i<=50:
+#     if i %3==0 and i%5==0:
+#         print(i)
+#     i+=1
+
+
 # # #24.find the largest digit in a number
+# n=int(input("enter the digit="))
+# largest=0
+# while n>0:
+#     m=n%10
+#     if m>largest:
+#         largest=m
+#     n//=10
+# print(largest)
+
 # # #25.niven number or not
+# n=input("Enter the number=")
+# if n.isdigit():
+#     print("digit")
+# elif n.isalpha():
+#     print("alphabet")
+# else:
+#     print("invalid")
+
 # # # 156 -->1+5+6=12
 # # # number divisible by the sum of digits.
+
+# n=int(input("enter the no="))
+# ori=n
+# sum=0
+# while n>0:
+#     m=n%10
+#     sum+=m
+#     n//=10
+# if ori%sum==0:
+#     print("divisible")
+# else:
+#     print(" not divisible")
+
+
 # # #26.series 105,98,91,.....7
+# i=105
+# d=-7
+# while i>=7:
+#     print(i,end=", " if i>7 else "\n")
+#     i+=d
+
 # # #27.write a program to print first 10 natural number in reverse order 
 # # # using while loop
 
-
+# i=10
+# while i>=1:
+#     print(i)
+#     i-=1
 
 # # #28,write a program to check if a given number is prime using a while loop
-#29,Write a Python program to print numbers starting from 1. Stop the loop if the number is greater than 10.
+
+# n = int(input("Enter the number: "))
+# if n <= 1:
+#     print(f"{n} is not a prime number.")
+# else:
+#     prime = True
+#     divisor = 2
+#     while divisor * divisor <= n:
+#         if n % divisor == 0:
+#             prime = False
+#             break
+#         divisor += 1
+
+#     if prime:
+#         print(f"{n} is a prime number.")
+#     else:
+#         print(f"{n} is not a prime number.")
+
+
+#29,Write a Python program to print numbers starting from 1. 
+# Stop the loop if the number is greater than 10.
+
+# i=1
+# while True:
+#     print(i)
+#     i+=1
+#     if i>10:
+#         break
+
+
+
 #30Write a Python program to print numbers from 1 to 15. Skip numbers divisible by 3.
+i=1
+while i<=15:
+    if i%3==0:
+        i+=1
+        continue
+    print(i)
+
+    i+=1
+   
